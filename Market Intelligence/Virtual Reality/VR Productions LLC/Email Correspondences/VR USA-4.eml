@@ -1,0 +1,120 @@
+Delivered-To: luis.soberanis28@gmail.com
+Received: by 2002:ab2:63c2:0:b0:163:d134:8d76 with SMTP id d2csp559074lqo;
+        Sun, 2 Oct 2022 04:01:12 -0700 (PDT)
+X-Received: by 2002:a05:6214:c2a:b0:4ac:c5b7:e5cc with SMTP id a10-20020a0562140c2a00b004acc5b7e5ccmr13215656qvd.55.1664708472278;
+        Sun, 02 Oct 2022 04:01:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1664708472; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XcVmT5cWnh+DLrb7n62bL3UYj/VLSHJvCH7UKFTo5dJcBDAVADqkxtDRfpyOVirtiM
+         hpsza/icmB5WHsLJ+wOS13VIOMwuycyiBI0AQNjB3J2bniRA+GpkSWTTOHBcyT4y4tce
+         GNXJDtljyHcL/SYyKiaBXfbpUJ9YflJO1lB4Z361P/SCUCEgnRYbTysEtnX+hOKD3YBe
+         XFxu0aOG8u5ik8bwxd34T76/fbkomK8JmbenGEGvVLZA8ct9/nqAoeDo/xLkAX2ST1bB
+         y63RGd/lAWJa/004KT/JgCPhxuMt+uHzG8wd0dttIyd98xEwgmqNSHpwRk6v8JM619s6
+         Na6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=aWToYktS9bu+fpS8tJLLIyZ/jGYMNDWN6rYMwSXnh/Y=;
+        b=OK5uRb7vsQWWqefjB8X11+4Pj21vKv4zWuEbQIDfyQmu28Wx/fm3r3hQDVU15vRGFR
+         Y3QwCEM0niGTwQIyqT9FXvuTIMSqg3DCfA9o75rXuq9hGY9XWQX7+OWh5MDdCClWYO7W
+         CWu89KyGGg4c6LX08tNfowA1KCuR+s7018yZi8AQFtDdNPC2ZRhfd64nmyqb8dCR4ZUF
+         BNvbilV8f+PuOUh/s4GuB6oviZW7Hq6rQrO4kiLnTPEtPemG6S6DkyzWTmXLbVhTvoT5
+         oiSEWVCFAcLXd59q1rUmBKjKkw72RaCOfbI8MGHSV66ldQAuK2WQn3hF7wzb8nqkmdSg
+         H01A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@vrarcadeusa-com.20210112.gappssmtp.com header.s=20210112 header.b=vK9dGYML;
+       spf=pass (google.com: domain of john@vrarcadeusa.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=john@vrarcadeusa.com
+Return-Path: <john@vrarcadeusa.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 19-20020ac85713000000b0035cd93ae8a0sor3450306qtw.81.2022.10.02.04.01.11
+        for <luis.soberanis28@gmail.com>
+        (Google Transport Security);
+        Sun, 02 Oct 2022 04:01:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of john@vrarcadeusa.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@vrarcadeusa-com.20210112.gappssmtp.com header.s=20210112 header.b=vK9dGYML;
+       spf=pass (google.com: domain of john@vrarcadeusa.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=john@vrarcadeusa.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=vrarcadeusa-com.20210112.gappssmtp.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date;
+        bh=aWToYktS9bu+fpS8tJLLIyZ/jGYMNDWN6rYMwSXnh/Y=;
+        b=vK9dGYMLHmfQaJ53OjoviODNT75raCiU3YL0qzqrUbmCrxtMLqWgU5Z52fMrIpxmB9
+         qz49JHrL+vpliA0zqgzDRPkjKiC+sBFIW9ZY/9fP312d2jLXbT5E8mrpmH2UCKXrUhA1
+         BVMX5cqRoB2ekR08IIcSEG+jBPNAxKYduA+420BX0NYcQGD7FWb0nO0YTxTVXiJGdAKR
+         S8wFN1XFHXfXzAXr15deW+OGrftz+wnaxNAFsopBXu96sqK8cxZ2FKWmG2qIvZMoFmtp
+         26XQMZDeDzwssvsW5SSSjR0BJdv9jgcEEKXTHmsl83N7zAHXeWcTDJWaL7cN3Pswt2zW
+         YxHw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date;
+        bh=aWToYktS9bu+fpS8tJLLIyZ/jGYMNDWN6rYMwSXnh/Y=;
+        b=lug+LZNu0jqjM/KakoGfBtUPb7T02SkFVQ7ZGFe+vKyy3yFvbB7ZultV8nv5Pahyg8
+         8fEsZ7DknWgDfjUZxMW2mg0gBCgSZsYsua4t61qLhjAp39YTRF8BwsRuXm2wOxfIluMz
+         vEshyORdHcUCqtyFx3aTlwxnwq/igt1rGIwboC0D2sc+Llx9FWs3Nt4xTHs65jUJYOiU
+         l0TsIwHrwLk+6wYyiaDW9XtOZzJbflT48VDZ2pzaFgjkYLHRTa7SIRoPk5yNhlf7mlPR
+         XYAXaEAiFLQUZmA6FhWlfo7+TAs0q+BKUwmEZ7JQSev9qXMFHJZ/nIn/kVc/8MaNu5Ww
+         39oA==
+X-Gm-Message-State: ACrzQf0gt4ny+MLCuneFVY6CbCPvZmCqmRwLwStz+ZBaUI5FbjHlfHB4
+	PZtbD/RaeINroJAIskHO7UQbdry7ARdRrQl/qeOzytbDdjZ1kA==
+X-Google-Smtp-Source: AMsMyM4aJA3E57Q1vzeo56I55mfouD8Hr5rRXV6lAmKSHaw0v+RqbOUN4dMzE2dFOQ/aqrR21xoHkL3b67RAJQ8S1a0=
+X-Received: by 2002:a05:622a:648:b0:35d:4b13:362d with SMTP id
+ a8-20020a05622a064800b0035d4b13362dmr12457952qtb.283.1664708471369; Sun, 02
+ Oct 2022 04:01:11 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAC94D7iWP1RtYyZ-7cKjmwg8A73sazjhVPD8RwNtLW=FQr_Wnw@mail.gmail.com>
+In-Reply-To: <CAC94D7iWP1RtYyZ-7cKjmwg8A73sazjhVPD8RwNtLW=FQr_Wnw@mail.gmail.com>
+From: John Iverson <john@vrarcadeusa.com>
+Date: Sun, 2 Oct 2022 05:01:00 -0600
+Message-ID: <CAC94D7jt2eGWhmeFLbCx5Bm0gzBhUfCGaYAOfp0DV=+vQh-ijA@mail.gmail.com>
+Subject: Re: VR USA
+To: luis.soberanis28@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000001742ee05ea0b253b"
+
+--0000000000001742ee05ea0b253b
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Luis,
+
+Did you have any thoughts on the proposal?
+
+Thanks,
+John
+
+On Tue, Sep 13, 2022 at 5:04 PM John Iverson <john@vrarcadeusa.com> wrote:
+
+> Hello Luis,
+>
+> Great chatting with you. I'd like to work with you on a strategy that
+> works for you, given your market and experience you're in a prime position
+> to benefit from this opportunity. Attached please find a proposal that lays
+> out what we've discussed. Let me know if you have any questions.
+>
+> Regards,
+> John Iverson
+> www.vrarcadeusa.com
+>
+>
+
+--0000000000001742ee05ea0b253b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello Luis,</div><div dir=3D"auto"><br></div><div dir=3D"=
+auto">Did you have any thoughts on the proposal?</div><div dir=3D"auto"><br=
+></div><div dir=3D"auto">Thanks,</div><div dir=3D"auto">John</div><div><br>=
+<div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Tue, Se=
+p 13, 2022 at 5:04 PM John Iverson &lt;<a href=3D"mailto:john@vrarcadeusa.c=
+om">john@vrarcadeusa.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail=
+_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:=
+1ex"><div dir=3D"ltr">Hello Luis,<div><br></div><div>Great chatting with yo=
+u. I&#39;d like to work with you on a strategy that works for you, given yo=
+ur market and experience you&#39;re in a prime position to benefit from thi=
+s opportunity. Attached please find a proposal that lays out what we&#39;ve=
+ discussed. Let me know if you have any questions.</div><div><br></div><div=
+>Regards,</div><div>John Iverson</div><div><a href=3D"http://www.vrarcadeus=
+a.com" target=3D"_blank">www.vrarcadeusa.com</a></div><div><br></div></div>
+</blockquote></div></div>
+
+--0000000000001742ee05ea0b253b--
