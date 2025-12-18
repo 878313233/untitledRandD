@@ -1,0 +1,110 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN="Hood, Amber (00090)":mailto:amber.hood@roberthalf.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=luis.sober
+ anis28@gmail.com:mailto:luis.soberanis28@gmail.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN="Jones, And
+ rew (00090)":mailto:Andrew.Jones@roberthalf.com
+DESCRIPTION;LANGUAGE=en-US:Per our conversation your Video Interview is set
+  for: Wednesday at 11:00 AM\n\n\n\nPlease make sure to reply to this email
+  with the following items:\n\n\n  1.  Current copy of your resume\n  2.  L
+ ist of your three most current references (direct report supervisors only)
+ .\n  3.  Current Address\n  4.  Emergency Contact (name and phone number)\
+ n  5.  Companies and positions for which you have recently applied\n\n\n\n
+ Following your video interview\, you will receive an Edocs email\, in whic
+ h you will be required to sign all documents electronically.  We will need
+  to receive these documents back before we can move forward in presenting 
+ you for any opportunities. However\, I9 and W4 will need to be completed i
+ n person prior to any placement with proof of proper identification for I9
+  purposes. This can be set up during your video interview.\n\n\n\n________
+ ________________________________________________________________________\n
+ Microsoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-US>\nJo
+ in the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting_
+ MjE3OWVhYTMtMzhkOS00MWQ3LWI3ZDctY2QwNGI5YjZlYjhi%40thread.v2/0?context=%7b
+ %22Tid%22%3a%2216532572-d567-4d67-8727-f12f7bb6aed3%22%2c%22Oid%22%3a%228e
+ cae061-8a12-4d5c-b583-8162f959881a%22%7d>\nMeeting ID: 285 001 023 574 8\n
+ Passcode: aP7os2ow\n________________________________\nDial in by phone\n+1
+  925-659-5559\,\,194218002#<tel:+19256595559\,\,194218002#> United States\
+ , All locations\n(844) 566-8388\,\,194218002#<tel:8445668388\,\,194218002#
+ > United States (Toll-free)\nFind a local number<https://dialin.teams.micr
+ osoft.com/63b7ddf0-3e74-4f46-9c47-ed611e611b14?id=194218002>\nPhone confer
+ ence ID: 194 218 002#\nJoin on a video conferencing device\nTenant key: te
+ ams@vc.roberthalf.com\nVideo ID: 118 841 588 8\nMore info<https://pexip.me
+ /teams/vc.roberthalf.com/1188415888>\nFor organizers: Meeting options<http
+ s://teams.microsoft.com/meetingOptions/?organizerId=8ecae061-8a12-4d5c-b58
+ 3-8162f959881a&tenantId=16532572-d567-4d67-8727-f12f7bb6aed3&threadId=19_m
+ eeting_MjE3OWVhYTMtMzhkOS00MWQ3LWI3ZDctY2QwNGI5YjZlYjhi@thread.v2&messageI
+ d=0&language=en-US> | Reset dial-in PIN<https://dialin.teams.microsoft.com
+ /usp/pstnconferencing>\n__________________________________________________
+ ______________________________\n
+UID:040000008200E00074C5B7101A82E0080000000079D0D46403EADB01000000000000000
+ 010000000AFEBB24255894340802B79523E513D4D
+SUMMARY;LANGUAGE=en-US:Robert Half Informational Interview
+DTSTART;TZID=Pacific Standard Time:20250702T110000
+DTEND;TZID=Pacific Standard Time:20250702T113000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250630T211025Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2123822457
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-ONLINEMEETINGTOLLNUMBER:+1 925-659-5559
+X-MICROSOFT-ONLINEMEETINGCONFERENCEID:194218002
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_MjE3OWVhYTMtMzhkOS00MWQ3LWI3ZDctY2QwNGI5YjZlYjhi%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%2216532572-d567-4d67-8727-f12f7bb6aed3%22%2c%22O
+ id%22%3a%228ecae061-8a12-4d5c-b583-8162f959881a%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/16532572-d567-4d67-8727-f12f7bb6aed3/8ecae061-8a12-4d5c-b583-8
+ 162f959881a/19_meeting_MjE3OWVhYTMtMzhkOS00MWQ3LWI3ZDctY2QwNGI5YjZlYjhi@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_MjE3OWVhYTMtMzhkOS00MWQ
+ 3LWI3ZDctY2QwNGI5YjZlYjhi@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-CONFERENCETELURI:tel:+1 844-566-8388\,\,194218002#
+X-MICROSOFT-ONLINEMEETINGTOLLFREENUMBERS:+1 844-566-8388
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
