@@ -1,0 +1,107 @@
+
+import csv
+import sqlite3
+from http.server import HTTPServer, BaseHTTPRequestHandler
+import json
+
+# Stage 1: Ingestion (W/LLC 0)
+def ingest_data(file_path, delimiter=','):
+    semantic_map = {'Director Purchase': 'Bullish', 'Sale': 'Bearish'}
+    with open(file_path, 'r') as f:
+        reader = csv.DictReader(f, delimiter=delimiter)
+        chunk = []
+        for row in reader:
+            row['signal'] = semantic_map.get(row.get('transaction_type', ''), 'Neutral')
+            chunk.append(row)
+        conn = sqlite3.connect('untitled_c_corp.db')
+        cursor = conn.cursor()
+        cursor.execute(f"CREATE TABLE IF NOT EXISTS data ({', '.join(f'{k} TEXT' for k in chunk[0].keys())})")
+        for row in chunk:
+            cursor.execute(f"INSERT INTO data VALUES ({', '.join('?' for _ in row)})", list(row.values()))
+        conn.commit()
+        conn.close()
+    return chunk
+
+# Stage 2: Org Intelligence (G/LLC 8)
+def assess_candidate(data):
+    candidates = []
+    for row in data:
+        if row.get('role') == 'quant' and float(row.get('performance_score', 0)) > 0.8:
+            candidates.append({'name': row['name'], 'fit': 'High'})
+    return candidates
+
+# Stage 3: Economic Signals (B/LLC 4)
+def generate_signals(data):
+    signals = []
+    for row in data:
+        if row['signal'] == 'Bullish' and float(row.get('volume', 0)) > 100000:
+            signals.append({'ticker': row['ticker'], 'action': 'Buy', 'confidence': 0.9})
+    return sorted(signals, key=lambda x: x['confidence'], reverse=True)
+
+# Stage 4: Compliance (L/LLC 0, L/LLC 8)
+def check_compliance(data):
+    conn = sqlite3.connect('untitled_c_corp.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM regulations WHERE regulation_type IN ('SEC', 'NACHA', 'GDPR')")
+    regulations = cursor.fetchall()
+    compliant = all(row['volume'] <= reg[1] for row in data for reg in regulations)
+    conn.close()
+    return compliant
+
+# Stage 5: Additional Applications (D/LLC 0, A/LLC 4)
+def process_medical_data(data):
+    return [{'patient_id': row['id'], 'status': 'Processed'} for row in data if row.get('type') == 'neurodata']
+
+# UI for Multi-Market Interaction
+class UIHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+        conn = sqlite3.connect('untitled_c_corp.db')
+        cursor = conn.cursor()
+        cursor.execute("SELECT DISTINCT ticker FROM data")
+        tickers = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        html = f"""
+        <html>
+        <body>
+            <select name="ticker" onchange="fetchSignals(this.value)">
+                {''.join(f'<option value="{t}">{t}</option>' for t in tickers)}
+            </select>
+            <div id="signals"></div>
+            <script>
+                async function fetchSignals(ticker) {{
+                    const response = await fetch('/signals?ticker=' + ticker);
+                    const signals = await response.json();
+                    document.getElementById('signals').innerText = JSON.stringify(signals);
+                }}
+            </script>
+        </body>
+        </html>
+        """
+        self.wfile.write(html.encode())
+
+    def do_POST(self):
+        if self.path.startswith('/signals'):
+            ticker = self.path.split('=')[1]
+            conn = sqlite3.connect('untitled_c_corp.db')
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM data WHERE ticker=?", (ticker,))
+            data = [dict(zip([desc[0] for desc in cursor.description], row)) for row in cursor.fetchall()]
+            conn.close()
+            signals = generate_signals(data)
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(signals).encode())
+
+# Main Workflow
+if __name__ == "__main__":
+    data = ingest_data('market_data.csv')
+    candidates = assess_candidate(data)
+    signals = generate_signals(data)
+    compliance = check_compliance(data)
+    medical_data = process_medical_data(data)
+    server = HTTPServer(('localhost', 8080), UIHandler)
+    server.serve_forever()

@@ -1,0 +1,72 @@
+
+import numpy as np
+from typing import Tuple
+import time
+
+# Simulated SNN-based transaction processing (N-LLC 0)
+def process_snn_transaction(transaction: dict, snn_settlement_net) -> Tuple[bool, float]:
+    """
+    Process ACH transaction using N-LLC 0's spiked-based settlement net.
+    Args:
+        transaction: Transaction data (e.g., amount, sender, receiver)
+        snn_settlement_net: N-LLC 0's SNN instance
+    Returns:
+        Tuple of transaction success and latency
+    """
+    # Encode transaction as neural spikes
+    spikes = snn_settlement_net.encode_transaction(transaction)
+    
+    # Process spikes for settlement
+    is_valid = snn_settlement_net.process_spikes(spikes, threshold=0.9)
+    
+    return is_valid, time.time()
+
+# ML risk scoring (B-LLC 0)
+def apply_ml_risk_score(transaction: dict, risk_engine) -> float:
+    """
+    Apply ML risk scoring to transaction using B-LLC 0's risk engine.
+    Args:
+        transaction: Transaction data
+        risk_engine: B-LLC 0's ML risk engine
+    Returns:
+        Risk score (0 to 1)
+    """
+    # Simulate risk scoring
+    features = np.array([transaction["amount"], transaction["timestamp"]])
+    score = risk_engine.predict(features)
+    return score
+
+# Integrated SNN-ACH transaction processor
+def process_ach_transaction(transaction: dict, snn_settlement_net, risk_engine) -> Tuple[bool, float]:
+    """
+    Process ACH transaction with SNN settlement and ML risk scoring.
+    Args:
+        transaction: Transaction data
+        snn_settlement_net: N-LLC 0's SNN instance
+        risk_engine: B-LLC 0's ML risk engine
+    Returns:
+        Tuple of transaction success and latency
+    """
+    start_time = time.time()
+    
+    # Apply risk scoring
+    risk_score = apply_ml_risk_score(transaction, risk_engine)
+    if risk_score < 0.1:  # Low risk threshold
+        is_valid, _ = process_snn_transaction(transaction, snn_settlement_net)
+    else:
+        is_valid = False  # Reject high-risk transactions
+    
+    latency = (time.time() - start_time) * 1_000_000  # Latency in μs
+    return is_valid, latency
+
+# Example usage
+if __name__ == "__main__":
+    # Simulated transaction, SNN settlement net, and risk engine
+    transaction = {"amount": 10000, "sender": "A", "receiver": "B", "timestamp": time.time()}
+    snn_settlement_net = SimulatedSNNSettlementNet()  # Placeholder for N-LLC 0
+    risk_engine = SimulatedMLRiskEngine()  # Placeholder for B-LLC 0
+    
+    is_valid, latency = process_ach_transaction(transaction, snn_settlement_net, risk_engine)
+    
+    print(f"Transaction Valid: {is_valid}")
+    print(f"Latency: {latency:.2f} μs")

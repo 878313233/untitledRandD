@@ -1,0 +1,90 @@
+
+import csv
+import sqlite3
+from http.server import HTTPServer, BaseHTTPRequestHandler
+import json
+
+# LLC 0: Real-Time CSV/TSV Parsing and Enrichment
+def parse_and_enrich(file_path, delimiter=','):
+    semantic_map = {'Director Purchase': 'Bullish', 'Sale': 'Bearish'}
+    with open(file_path, 'r') as f:
+        reader = csv.DictReader(f, delimiter=delimiter)
+        chunk = []
+        for row in reader:
+            row['signal'] = semantic_map.get(row.get('transaction_type', ''), 'Neutral')
+            chunk.append(row)
+        # Store in SQLite
+        conn = sqlite3.connect('trading_wizard.db')
+        cursor = conn.cursor()
+        cursor.execute(f"CREATE TABLE IF NOT EXISTS insider_data ({', '.join(f'{k} TEXT' for k in chunk[0].keys())})")
+        for row in chunk:
+            cursor.execute(f"INSERT INTO insider_data VALUES ({', '.join('?' for _ in row)})", list(row.values()))
+        conn.commit()
+        conn.close()
+    return chunk
+
+# LLC 4: Signal Generation and Insider Trade Mapping
+def generate_signals(data):
+    signals = []
+    for row in data:
+        if row['signal'] == 'Bullish' and float(row.get('volume', 0)) > 100000:
+            signals.append({
+                'ticker': row['ticker'],
+                'action': 'Buy',
+                'confidence': 0.9
+            })
+    return sorted(signals, key=lambda x: x['confidence'], reverse=True)
+
+# LLC 0: Lightweight UI for Trader Interaction
+class UIHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+        conn = sqlite3.connect('trading_wizard.db')
+        cursor = conn.cursor()
+        cursor.execute("SELECT DISTINCT ticker FROM insider_data")
+        tickers = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        html = f"""
+        <html>
+        <body>
+            <select name="ticker" onchange="fetchSignals(this.value)">
+                {''.join(f'<option value="{t}">{t}</option>' for t in tickers)}
+            </select>
+            <div id="signals"></div>
+            <script>
+                async function fetchSignals(ticker) {{
+                    const response = await fetch('/signals?ticker=' + ticker);
+                    const signals = await response.json();
+                    document.getElementById('signals').innerText = JSON.stringify(signals);
+                }}
+            </script>
+        </body>
+        </html>
+        """
+        self.wfile.write(html.encode())
+
+    def do_POST(self):
+        if self.path.startswith('/signals'):
+            ticker = self.path.split('=')[1]
+            conn = sqlite3.connect('trading_wizard.db')
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM insider_data WHERE ticker=?", (ticker,))
+            data = [dict(zip([desc[0] for desc in cursor.description], row)) for row in cursor.fetchall()]
+            conn.close()
+            signals = generate_signals(data)
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(signals).encode())
+
+# Main Workflow
+if __name__ == "__main__":
+    # Ingest and enrich data (LLC 0)
+    data = parse_and_enrich('insider_trades.csv')
+    # Generate signals (LLC 4)
+    signals = generate_signals(data)
+    # Start UI server (LLC 0)
+    server = HTTPServer(('localhost', 8080), UIHandler)
+    server.serve_forever()

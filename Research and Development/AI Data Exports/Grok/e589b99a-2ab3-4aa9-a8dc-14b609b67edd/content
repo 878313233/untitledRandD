@@ -1,0 +1,49 @@
+
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": ["LLC 6: PII Verification", "LLC 7: Consent Platform", "LLC 9: Regulatory AI"],
+    "datasets": [
+      {
+        "label": "Investment (USD M)",
+        "data": [80, 90, 100],
+        "backgroundColor": "#1E88E5"
+      },
+      {
+        "label": "ROI Low (USD B)",
+        "data": [1.1, 1.2, 1.5],
+        "backgroundColor": "#43A047"
+      },
+      {
+        "label": "ROI High (USD B)",
+        "data": [1.9, 2.0, 2.5],
+        "backgroundColor": "#7CB342"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Value (USD)"
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "LLC"
+        }
+      }
+    },
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Investment and 5-Year ROI for Division J LLCs (NATO & BRICS)"
+      }
+    }
+  }
+}
+```

@@ -1,0 +1,49 @@
+
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": ["J: Data Protection", "L: Legal Compliance", "G: Corporate Admin", "C: Defense", "B: Financial"],
+    "datasets": [
+      {
+        "label": "Investment (USD B)",
+        "data": [1.1, 0.7, 0.6, 0.3, 0.5],
+        "backgroundColor": "#1E88E5"
+      },
+      {
+        "label": "ROI Low (USD B)",
+        "data": [15, 10, 8, 4, 7],
+        "backgroundColor": "#43A047"
+      },
+      {
+        "label": "ROI High (USD B)",
+        "data": [25, 17, 13, 7, 12],
+        "backgroundColor": "#7CB342"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Value (USD B)"
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Division"
+        }
+      }
+    },
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Investment and 5-Year ROI for Federal Data Protection Agency Prototype"
+      }
+    }
+  }
+}
+```

@@ -1,0 +1,49 @@
+
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Niobium/Aluminum", "NbTiN/TiN", "YBCO", "Topological"],
+    "datasets": [
+      {
+        "label": "Investment (USD M)",
+        "data": [200, 150, 100, 80],
+        "backgroundColor": "#1E88E5"
+      },
+      {
+        "label": "ROI Low (USD B)",
+        "data": [2.5, 2.0, 1.5, 0.8],
+        "backgroundColor": "#43A047"
+      },
+      {
+        "label": "ROI High (USD B)",
+        "data": [4.0, 3.5, 2.5, 1.5],
+        "backgroundColor": "#7CB342"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Value (USD)"
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Material"
+        }
+      }
+    },
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Investment and 5-Year ROI for Non-RTS Materials (Division Q)"
+      }
+    }
+  }
+}
+```
