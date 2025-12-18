@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20220226T020000Z
+DTEND:20220226T060000Z
+DTSTAMP:20220223T201909Z
+ORGANIZER;CN=revolutions@gmail.com:mailto:revolutions@gmail.com
+UID:3kk8itvn7n96p7763sr979h3th@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=luis.soberanis28@gmail.com;X-NUM-GUESTS=0:mailto:luis.soberanis28@g
+ mail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-850399778
+CREATED:20220223T201906Z
+DESCRIPTION:Drinks and apps with b8ta alum\, investors\, and friends of b8t
+ a to say goodbye to a company we loved.\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nDo not edit this s
+ ection of the description.\n\nView your event at https://calendar.google.co
+ m/calendar/event?action=VIEW&eid=M2trOGl0dm43bjk2cDc3NjNzcjk3OWgzdGggbHVpcy
+ 5zb2JlcmFuaXMyOEBt&tok=MjEjcmV2b2x1dGlvbnNAZ21haWwuY29tN2YwYmYxMGIxZWU0OTk1
+ OWQ1MzgwYjAzYmUyYzJkMThiMzRmMDZhZQ&ctz=America%2FLos_Angeles&hl=en&es=1.\n-
+ ::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~::~:~::-
+LAST-MODIFIED:20220223T201907Z
+LOCATION:25 Lusk St\, San Francisco\, CA 94107\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:End of b8ta party
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
