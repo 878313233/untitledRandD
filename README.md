@@ -34,7 +34,7 @@ This repository provides:
 - **Cross-Industry Analysis**: Comparative studies across retail, religion (LDS AI), education (PCCD AIDA, SRJC), and healthcare sectors
 - **Technology Assessments**: Evaluations of AI platforms (wit.ai, Meta), coding assistants (Cursor, GitHub Copilot), and development tools
 - **Innovation Documentation**: Research notes on parasociality in workplaces, surveillance technology commercialization, and geopolitical resource positioning (BRICS/NATO lithium analysis)
-- **Development Resources**: XCode projects, ChromeOS deployment strategies, and technical implementation details
+- **Development Resources**: Xcode projects, ChromeOS deployment strategies, and technical implementation details
 
 ### For Target Audiences
 - **Academic Institutions**: Educational technology adoption strategies, AI policy frameworks, and institutional technology assessments
@@ -86,7 +86,7 @@ This repository provides:
 - **Strategic Analysis**: Proprietary insights on market vulnerabilities and opportunities
 
 #### 2. Technology Assets
-- **XCode Project**: Open-Source SLAM Registry & Spatial-Media Platform (WAV)
+- **Xcode Project**: Open-Source SLAM Registry & Spatial-Media Platform (WAV)
 - **API Architectures**: REST-MQTT health and wellness platforms
 - **NFC/RFID Protocols**: SO 15693 IBCI Exchange implementations
 

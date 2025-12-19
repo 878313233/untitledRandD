@@ -48,7 +48,7 @@ untitledRandD occupies a distinctive position at the intersection of:
 #### Tangible Assets
 1. **Intellectual Property Portfolio**: $200,000 - $400,000
    - 4 distinct LLC concepts with technical specifications
-   - Working XCode project (SLAM Registry platform)
+   - Working Xcode project (SLAM Registry platform)
    - API architectures and protocol implementations
    - Proprietary market intelligence database
 
