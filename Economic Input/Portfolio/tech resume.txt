@@ -225,9 +225,4 @@ An instruction manual containing Linux sudo codes that allow for Peralta Communi
 
 
 
-
-
-Robot Bartholomew-Flannery: A proprietary AI assistant
-
-
 ________________
