@@ -1,0 +1,22 @@
+{
+  "locale": "en",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.snapshots/**": true,
+    "**/node_modules/**": true,
+    "**/.venv/**": true,
+    "**/.pytest_cache/**": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.snapshots": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/.pytest_cache": true
+  },
+  "files.exclude": {
+    "**/.snapshots": true,
+    "**/.pytest_cache": true
+  }
+}
