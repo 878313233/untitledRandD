@@ -1,0 +1,33 @@
+# source: Economic Input/Resources/Continuing Education Providers/p5918.pdf
+# format: line_number<TAB>text
+1	C O N T I N U I N G E D U CAT I O N P R O V I D E R
+2	PROGRAM NUMBERING SEQUENCE
+3	
+4	
+5	
+6	Z MF WG - E - 0 0 1 0 1 - 24 - I
+7	                1                                          2                                    3                                   4                        5
+8	
+9	
+10	
+11	
+12	  ZMFWG                                    E                           00101                                  24                              I
+13	 1. The five character          2. The category of IRS            3. The sequence number             4. The two-digit calendar     5. The program delivery
+14	 alpha-numeric CE               Continuing Education              assigned by the IRS                year in which a program       method
+15	 Provider Number which                                            for each program the               is first approved for use
+16	 remains constant               E – Ethics                        provider requests                                                I – In Person
+17	 year-to-year                   T – Federal Tax                   approval to offer                  For example, “24” would       O – Online
+18	                                U – Federal Tax Update                                               indicate that the IRS         S – Self Study
+19	                                Q – Qualified Retirement                                             approved the program for
+20	                                Plan Matters                                                         use starting in 2024
+21	                                P – Special Enrollment
+22	                                Exam (SEE) Test
+23	                                Preparation
+24	                                A – Annual Federal Tax
+25	                                Refresher (AFTR)
+26	
+27	
+28	
+29	
+30	                 Publication 5918 (1-2024) Catalog Number 94630Y Department of the Treasury Internal Revenue Service www.irs.gov
+31	
