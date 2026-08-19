@@ -1,0 +1,141 @@
+line_number,text
+1,Form   8962                                                  Premium Tax Credit (PTC)
+2,                                                                                                                                                                  OMB No. 1545-0074
+3,
+4,
+5,                                                                                                                                                                   2025
+6,Department of the Treasury
+7,"                                                        Attach to Form 1040, 1040-SR, or 1040-NR."
+8,                                                                                                                                                                   Attachment
+9,Internal Revenue Service                   Go to www.irs.gov/Form8962 for instructions and the latest information.                                                 Sequence No. 73
+10,Name shown on your return                                                                                               Your social security number
+11,
+12,
+13,"  A. You cannot take the PTC if your filing status is married filing separately unless you qualify for an exception. See instructions. If you qualify, check the box"
+14, Part I         Annual and Monthly Contribution Amount
+15,   1      Tax family size. Enter your tax family size. See instructions . . .             .    .     .    .    .   .    .   . .       .   .   .   .    .      1
+16,   2a     Modified AGI. Enter your modified AGI. See instructions . . .                   .    .     .    .    .   .        2a
+17,     b    Enter the total of your dependents’ modified AGI. See instructions              .    .     .    .    .   .        2b
+18,   3      Household income. Add the amounts on lines 2a and 2b. See instructions                     .    .    .   .    .   .    .    .   .   .   .    .      3
+19,"   4      Federal poverty line. Enter the federal poverty line amount from Table 1-1, 1-2, or 1-3. See instructions. Check the"
+20,          appropriate box for the federal poverty table used. a         Alaska    b      Hawaii     c      Other 48 states and DC                             4
+21,   5      Household income as a percentage of federal poverty line (see instructions) . . . . . . . . . . . .                                                 5                      %
+22,   6      Reserved for future use . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23,"   7      Applicable figure. Using your line 5 percentage, locate your “applicable figure” on the table in the instructions  . .                              7"
+24,   8a     Annual contribution amount. Multiply line 3 by                                 8b Monthly contribution amount. Divide line 8a
+25,          line 7. Round to nearest whole dollar amount 8a                                   by 12. Round to nearest whole dollar amount                      8b
+26, Part II        Premium Tax Credit Claim and Reconciliation of Advance Payment of Premium Tax Credit
+27,   9      Are you allocating policy amounts with another taxpayer or do you want to use the alternative calculation for year of marriage? See instructions.
+28,"              Yes. Skip to Part IV, Allocation of Policy Amounts, or Part V, Alternative Calculation for Year of Marriage."
+29,              No. Continue to line 10.
+30, 10       See the instructions to determine if you can use line 11 or must complete lines 12 through 23.
+31,              Yes. Continue to line 11. Compute your annual PTC. Then skip lines 12–23 and continue to line 24.
+32,              No. Continue to lines 12–23. Compute your monthly PTC and continue to line 24.
+33,                         (a) Annual enrollment   (b) Annual applicable          (c) Annual                (d) Annual maximum
+34,                                                                                                                                                                   (f) Annual advance
+35,         Annual                                    SLCSP premium                                           premium assistance         (e) Annual PTC allowed
+36,                           premiums (Form(s)                               contribution amount                                                                  payment of PTC (Form(s)
+37,"       Calculation                                 (Form(s) 1095-A,                                      (subtract (c) from (b); if     (smaller of (a) or (d))"
+38,"                                                                                                                                                                    1095-A, line 33C)"
+39,"                            1095-A, line 33A)          line 33B)                 (line 8a)               zero or less, enter -0-)"
+40,
+41, 11      Annual Totals
+42,                                                                                 (c) Monthly
+43,                         (a) Monthly enrollment (b) Monthly applicable                                    (d) Monthly maximum                                  (f) Monthly advance
+44,                                                                            contribution amount
+45,        Monthly            premiums (Form(s)       SLCSP premium                                           premium assistance       (e) Monthly PTC allowed payment of PTC (Form(s)
+46,                                                                            (amount from line 8b
+47,"       Calculation        1095-A, lines 21–32, (Form(s) 1095-A, lines                                    (subtract (c) from (b); if    (smaller of (a) or (d)) 1095-A, lines 21–32,"
+48,                                                                           or alternative marriage
+49,"                               column A)           21–32, column B)                                      zero or less, enter -0-)                                   column C)"
+50,                                                                             monthly calculation)
+51,
+52, 12       January
+53, 13       February
+54, 14       March
+55, 15       April
+56, 16       May
+57, 17       June
+58, 18       July
+59, 19       August
+60, 20       September
+61, 21       October
+62, 22       November
+63, 23       December
+64," 24       Total PTC. Enter the amount from line 11, column (e), or add lines 12 through 23, column (e), and enter the total"
+65,          here . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                             24
+66," 25       Advance payment of PTC. Enter the amount from line 11, column (f), or add lines 12 through 23, column (f), and"
+67,          enter the total here . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                       25
+68,
+69," 26       Net PTC. If line 24 is greater than line 25, subtract line 25 from line 24. Enter the difference here and on Schedule 3"
+70,"          (Form 1040), line 9. If line 24 equals line 25, enter -0-. Stop here. If line 25 is greater than line 24, leave this line"
+71,          blank and continue to line 27     . . . . . . . . . . . . . . . . . . . . . . . . .                                                                26
+72,Part III        Repayment of Excess Advance Payment of the Premium Tax Credit
+73," 27       Excess advance payment of PTC. If line 25 is greater than line 24, subtract line 24 from line 25. Enter the difference here                        27"
+74, 28       Repayment limitation (see instructions)     . . . . . . . . . . . . . . . . . . . . . .                                                            28
+75," 29       Excess advance PTC repayment. Enter the smaller of line 27 or line 28 here and on Schedule 2 (Form 1040), line 1a                                  29"
+76,"For Paperwork Reduction Act Notice, see your tax return instructions.                                         Cat. No. 37784Z                         Form 8962 (2025) Created 3/25/25"
+77,
+78,Form 8962 (2025)                                                                                                                                        Page 2
+79,
+80,Part IV       Allocation of Policy Amounts
+81,Complete the following information for up to four policy amount allocations. See instructions for allocation details.
+82,Allocation 1
+83," 30     (a) Policy Number (Form 1095-A, line 2)       (b) SSN of other taxpayer                 (c) Allocation start month      (d) Allocation stop month"
+84,
+85,
+86,
+87,        Allocation percentage                                                                                             (g) Advance Payment of the PTC
+88,                                             (e) Premium Percentage                    (f) SLCSP Percentage
+89,        applied to monthly                                                                                                          Percentage
+90,        amounts
+91,
+92,Allocation 2
+93," 31     (a) Policy Number (Form 1095-A, line 2)       (b) SSN of other taxpayer                 (c) Allocation start month      (d) Allocation stop month"
+94,
+95,
+96,        Allocation percentage                                                                                             (g) Advance Payment of the PTC
+97,                                             (e) Premium Percentage                    (f) SLCSP Percentage
+98,        applied to monthly                                                                                                          Percentage
+99,        amounts
+100,
+101,Allocation 3
+102," 32     (a) Policy Number (Form 1095-A, line 2)       (b) SSN of other taxpayer                 (c) Allocation start month      (d) Allocation stop month"
+103,
+104,
+105,
+106,        Allocation percentage                                                                                             (g) Advance Payment of the PTC
+107,                                             (e) Premium Percentage                    (f) SLCSP Percentage
+108,        applied to monthly                                                                                                          Percentage
+109,        amounts
+110,
+111,Allocation 4
+112," 33     (a) Policy Number (Form 1095-A, line 2)       (b) SSN of other taxpayer                 (c) Allocation start month      (d) Allocation stop month"
+113,
+114,
+115,
+116,        Allocation percentage                                                                                             (g) Advance Payment of the PTC
+117,                                             (e) Premium Percentage                    (f) SLCSP Percentage
+118,        applied to monthly                                                                                                          Percentage
+119,        amounts
+120,
+121, 34     Have you completed all policy amount allocations?
+122,           Yes. Multiply the amounts on Form 1095-A by the allocation percentages entered by policy. Add all allocated policy amounts and
+123,"        non-allocated policy amounts from Forms 1095-A, if any, to compute a combined total for each month. Enter the combined total for each"
+124,"        month on lines 12–23, columns (a), (b), and (f). Compute the amounts for lines 12–23, columns (c)–(e), and continue to line 24."
+125,            No. See the instructions to report additional policy amount allocations.
+126,
+127,
+128, Part V       Alternative Calculation for Year of Marriage
+129,"Complete line(s) 35 and/or 36 to elect the alternative calculation for year of marriage. For eligibility to make the election, see the instructions for line 9."
+130,"To complete line(s) 35 and/or 36 and compute the amounts for lines 12–23, see the instructions for this Part V."
+131,                                (a) Alternative family size (b) Alternative monthly         (c) Alternative start month       (d) Alternative stop month
+132, 35     Alternative entries                                 contribution amount
+133,        for your SSN
+134,
+135,                                (a) Alternative family size (b) Alternative monthly         (c) Alternative start month       (d) Alternative stop month
+136, 36     Alternative entries                                 contribution amount
+137,        for your spouse’s
+138,        SSN
+139,                                                                                                                                            Form 8962 (2025)
+140,
