@@ -12,7 +12,7 @@ Mass monitoring of Bluetooth device names “I see their phone name, check the A
 	⁃	first pioneering of Proximity-Based Platforms & Content ( Division A : LLC 7 )
 
 Mass monitoring of dating app carousels “They’re nearby! Look at the distance!”
-“They know about sharing location. Let’s check their distance on the app!”
+“They know about sharing location. Maybe we can check their distance on the carousel!”
 	⁃	first pioneering of Proximity-Based Platforms & Content ( Division A : LLC 7 )
 
 Mass monitoring of personal location “They’re still sharing their location…”
@@ -27,10 +27,6 @@ Mass audits of personal DMs. “They still have their account logged in. These a
 
 Mass audits of ‘likes’ ‘comments’ and ‘tagged’ posts. “They like this but don’t follow them?” “Woah they were posted with this person last week.” “I know that commenter!”
 
-Having certain Facebook friends felt like voting into specific political parties, until it did.
-
-Gotta fix the ice cream machine there.
-
 
 	Digital Authority Legend:
 
@@ -39,6 +35,8 @@ Comments - subjective opinions and objective logistics index
 Tagged - Location and affiliation chart
 Followers - affiliated dogmas and pedagogy evaluator 
 Following - pursed interests, personal projections, and behavioral output interpreter
+
+
 
 
 
