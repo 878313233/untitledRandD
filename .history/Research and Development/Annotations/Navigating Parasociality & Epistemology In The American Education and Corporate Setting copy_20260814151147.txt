@@ -5,7 +5,6 @@ By Luis Angel Soberanis-Pacheco
 This book is still a work in progress.
 The following below consists of chapters that are followed by elaboration points that will later be extended into larger paragraphs.
 
-Written in congruence to applications that are explored in "Proximity-Based Passive Surveillance Platforms & Digital Whisper Networks"
 
 Prologue: McCarthyism - The American Moral Entrepreneur and the Folk Devil
 Chapter One: Blind Propelling Axioms With Social and Cultural Epistemologies
