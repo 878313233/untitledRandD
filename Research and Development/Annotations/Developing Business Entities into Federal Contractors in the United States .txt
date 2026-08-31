@@ -33,7 +33,7 @@ Local Business License – https://www.sf.gov/register-your-business-san-francis
 Varies by business activity type ($0–$300+)
 
 Legal Name + Address + EIN Validation – https://sam.gov/entity-registration Validates entity information via Login.gov against IRS records and assigns a 12-character Unique Entity Identifier (UEI).
-$0 $0 (Free)
+$0 (Free)
 
 NAICS Codes + PSC Codes + Reps & Certs – https://sam.gov/entity-registration Configured via SAM.gov's registration wizard prior to profile submission. Sets industry codes and completes Federal Acquisition Regulation (FAR) assertions.
 $0 (Free)
