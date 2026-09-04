@@ -1,0 +1,137 @@
+
+Developing Private and Public Business Entities for Federal Contracting in the United States
+
+
+Developing Public Business Entities into Federal Contractors in the United States 
+
+
+    Section 1. Creating the Business Entity:
+
+The following below are formation documents and tax filings that can be filed online in California as a means to create your first business in the United States.
+
+Form LLC-1 (Articles of Organization) - https://bizfileonline.sos.ca.gov/forms/business This can be found on BizFile Online, which creates an SOS File Number which can be used for future use cases.
+$70 base fee 
+
+Form SS-4 (Employer Identification Number Application) - https://sa.www4.irs.gov/applyein/ Allow 10-15 business days after EIN issuance for IRS data to sync with SAM.gov before attempting registration.
+$0 (free)
+
+Form LLC-12 (Statement of Information) - https://bizfileonline.sos.ca.gov/search/business Updates State Records. Initial filing is due within 90 days of formation; subsequent filings are due every two years. 
+$20
+
+FinCEN BOI Reporting – https://boiefiling.fincen.gov/boir/html As of August 14, 2026, U.S. companies and U.S. persons are permanently exempt from BOI reporting requirements. Reporting may be required for certain foreign entities registered to do business in a U.S. state. Check FinCEN.gov for current applicability.
+$0 (Free)
+
+Form FTB 3522 (Annual Franchise Tax) - https://www.ftb.ca.gov/forms/search/index.html Required by the California Franchise Tax Board. Due by the 15th day of the 4th month after formation for year one, then April 15 annually thereafter.
+$800
+
+Total cost of starting an LLC: $890
+
+
+    Section 2. Developing the Business Entity into a Federal Contractor:
+
+The following below are government registrations, portal filings, and database validations required to transition a private business into an active federal contractor eligible for U.S. government contract awards.
+
+Local Business Tax Registration - https://sftreasurer.org/business/register-business SF Treasurer & Tax Collector Portal. Creates a San Francisco Business Account Number (BAN). Prerequisites include SOS Entity Number and IRS EIN.
+$75–$1,020+ (based on estimated gross receipts)
+
+Local Business License – https://www.sf.gov/register-your-business-san-francisco SF Office of Small Business Portal. Obtains required city permits and business registration certificate for local operational compliance.
+Varies by business activity type ($0–$300+)
+
+Legal Name + Address + EIN Validation – https://sam.gov/entity-registration Validates entity information via Login.gov against IRS records and assigns a 12-character Unique Entity Identifier (UEI).
+$0 $0 (Free)
+
+NAICS Codes + PSC Codes + Reps & Certs – https://sam.gov/entity-registration Configured via SAM.gov's registration wizard prior to profile submission. Sets industry codes and completes Federal Acquisition Regulation (FAR) assertions.
+$0 (Free)
+
+Immediate & Highest-Level Owner Disclosures – https://sam.gov/entity-registration Mandatory ownership disclosures completed directly in SAM.gov to ensure federal corporate transparency compliance.
+$0 (Free)
+
+Notarized Entity Administrator Letter – https://www.fsd.gov/ Required by the Federal Service Desk (FSD.gov) to formally assign an internal Entity Administrator for SAM.gov profile control.
+$0 (Free portal submission; ~$10–$25 if using external notary service)
+
+Automated DLA Push – https://sam.gov/entity-registration System-to-system data transfer. Upon SAM registration approval, profile data is automatically pushed to the Defense Logistics Agency (DLA) to generate/assign a CAGE Code.
+$0 (Free)
+
+Procurement-Specific Reps & Certs – https://eoffer.gsa.gov/ Additional portal-specific certifications completed when submitting formal bids on specific agency platforms.
+$0 (Free)
+
+Annual SAM.gov Renewal – https://sam.gov/entity-registration Mandatory yearly update of core data and assertions to maintain active registration status in federal databases.
+$0 (Free)
+
+Grand Total (Section 1 + Section 2): $949 – $1,274+
+
+
+
+Developing Anonymized Holding Companies and Operating Subsidiaries into Federal Contractors in the United States
+
+
+    Section 1. Creating a Holding Company (An Anonymized Out-of-State Parent):
+
+The following below are formation documents, tax filings, and annual maintenance requirements to establish an anonymized Parent Holding Company in an asset-protection-friendly jurisdiction (Delaware, Wyoming, or New Mexico) using a commercial registered agent to keep ultimate beneficial owner information off public state databases.
+
+Articles of Incorporation or Organization – https://icis.corp.delaware.gov/ecorp2/services/e-filing / https://wyobiz.wyo.gov/Business/RegistrationType.aspx / https://enterprise.sos.nm.gov Creates the Parent Holding Company and assigns a state-issued entity/file identification number.
+$110 (DE LLC) / $100 (WY) / $50 (NM)
+
+Form SS-4 (Parent EIN Application) – https://sa.www4.irs.gov/applyein/legalStructure Issues a Federal EIN for the Parent Holding Company.
+$0 (Free)
+
+Annual / Biennial Corporate Report – https://icis.corp.delaware.gov/ecorp/logintax.aspx  / https://wyobiz.wyo.gov/Business/AnnualReport.aspx / https://enterprise.sos.nm.gov Maintains good standing for the Parent Holding Company via a commercial registered agent.
+(New Mexico LLCs do not require annual reports.)
+$400 (DE LLC Annual Tax – confirmed current rate; effective January 1, 2026, increased from $300 under DE House Bill 400, due June 1, 2027) / $60 (WY Annual Report – minimum license tax; fee is greater of $60 or $0.0002 per dollar of Wyoming-located assets) / $0 (NM LLC)
+
+Form 8832 (Entity Classification Election - Optional) – https://www.irs.gov/forms-pubs/about-form-8832 Filed with the IRS if electing a non-default tax classification for the Holding Company (e.g., C-Corporation tax status).
+$0 (Free)
+
+FinCEN BOI Reporting – https://boiefiling.fincen.gov/boir/html As of August 14, 2026, U.S.-created companies are exempt from federal BOI reporting under FinCEN's final rule. Certain foreign companies registered to do business in the United States may remain subject to BOI reporting requirements. Check FinCEN.gov for current applicability.
+$0 (Free)
+
+Total Cost: $50 – $510+ (based on state chosen)
+
+
+    Section 2. Developing the Operating Subsidiary into a Federal Contractor:
+
+The following below are government registrations, local portal filings, and database validations required to transition a California operating subsidiary (owned by the out-of-state holding company) into an active federal contractor eligible for U.S. government contract awards.
+
+Form LLC-1 (Articles of Organization) – https://bizfileonline.sos.ca.gov/forms/business BizFile Online Portal. Creates the California Operating Subsidiary as a Manager-Managed entity using a nominee filer and generates a CA SOS File Number.
+$70 base fee
+
+Form SS-4 (Subsidiary Employer Identification Number Application) – https://sa.www4.irs.gov/applyein/ IRS Online Application Portal. Generates a distinct EIN for the Operating Subsidiary. Allow 10-15 business days after EIN issuance for IRS data to sync with SAM.gov before attempting registration.
+$0 (Free)
+
+Form LLC-12 (Statement of Information) – https://bizfileonline.sos.ca.gov/search/business BizFile Online Search & Filings. Updates State Records explicitly listing the Out-of-State Parent Holding Company as the Sole Member/Manager to keep personal owner names off California public records. Initial filing is due within 90 days of formation; subsequent filings are due every two years.
+$20
+
+Form FTB 3522 (Annual Franchise Tax) – https://www.ftb.ca.gov/forms/search/index.html California FTB Portal. Required by the California Franchise Tax Board for the Operating Subsidiary. Due by the 15th day of the 4th month after formation for year one, then April 15 annually thereafter.
+$800
+
+Local Business Tax Registration – https://sftreasurer.org/business/register-business SF Treasurer & Tax Collector Portal. Creates a San Francisco Business Account Number (BAN) for the Operating Subsidiary. Prerequisites include CA SOS Entity Number and Subsidiary IRS EIN.
+$75–$1,020+ (based on estimated gross receipts)
+
+Local Business License – https://www.sf.gov/register-your-business-san-francisco SF Office of Small Business Portal. Obtains required city permits and business registration certificate for local operational compliance.
+Varies by business activity type ($0–$300+)
+
+CDTFA Sales Tax Account / Seller’s Permit – https://www.cdtfa.ca.gov/services/ CDTFA Online Portal. Generates a California State Seller's Permit if the Operating Subsidiary sells tangible goods.
+$0 (Free)
+
+Legal Name + Address + EIN Validation – https://sam.gov/entity-registration SAM.gov Portal. Validates the Operating Subsidiary's legal business name, physical address, and EIN via Login.gov against IRS records and assigns a 12-character Unique Entity Identifier (UEI).
+$0 (Free)
+
+NAICS Codes + PSC Codes + Reps & Certs – https://sam.gov/entity-registration SAM.gov Portal. Configured via SAM.gov's registration wizard prior to profile submission. Sets industry codes and completes Federal Acquisition Regulation (FAR) assertions.
+$0 (Free)
+
+Immediate & Highest-Level Owner Disclosures – https://sam.gov/entity-registration SAM.gov Portal. Mandatory federal corporate transparency disclosures completed in SAM.gov declaring the Out-of-State Parent Holding Company as the Immediate (and Highest-Level) Owner.
+$0 (Free)
+
+Notarized Entity Administrator Letter – https://www.fsd.gov/ Federal Service Desk Portal. Required by FSD.gov to formally assign an internal Entity Administrator for the Operating Subsidiary's SAM.gov profile control.
+$0 (Free portal submission; ~$10–$25 if using external notary service)
+
+Automated DLA Push – https://sam.gov/entity-registration System-to-System Integration. Upon SAM registration approval, profile data is automatically pushed to the Defense Logistics Agency (DLA) to generate/assign a CAGE Code to the Operating Subsidiary.
+$0 (Free)
+
+Procurement-Specific Reps & Certs – https://eoffer.gsa.gov/ GSA eOffer Portal. Additional portal-specific certifications completed when submitting formal bids on specific agency platforms.
+$0 (Free)
+
+Annual SAM.gov Renewal – https://sam.gov/entity-registration SAM.gov Portal. Mandatory yearly update of core data and assertions to maintain active registration status in federal databases.
+$0 (Free)
+
+Grand Total (Section 1 + Section 2): $1,015 – $2,780+
