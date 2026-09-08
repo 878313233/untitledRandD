@@ -46,12 +46,46 @@ Chapter Four: Reinforcing Axioms and Postulates In Dominant, Negotiated, & Oppos
 
 
 Chapter Five: Defining Physical and Digital Semiotics for Digitally Parasocial Audiences
+
+        Digital Status Signifiers and the Semiotics of Consumer Technology
+    - Blue vs Green Message Bubbles as Technological Identity and Status Signals
+    - Consumer Technology as a Perceived Form of Social and Cultural Capital
+    - The Conversion of Observable Digital Interface Characteristics Into Socioeconomic Assumptions
+    - Cultural Interpretations of Platform-Specific Technology as Indicators of Prestige, Affiliation, Risk, or Social Standing
+
+-       Platform-Specific Status Signifiers and the Semiotics of Digital Consumption
+	•	iMessage/SMS interface differences as perceived socioeconomic and cultural signifiers
+	•	Blue vs. green message bubbles as a form of technological identity signaling
+	•	The interpretation of consumer technology as social and cultural capital
+	•	How platform affordances become proxies for assumptions about wealth, prestige, conformity, or risk
+	•	Distinguishing an observable technological signal from the socioeconomic assumption attached to it
+
+technical artifact → visible interface cue → cultural interpretation → socioeconomic inference → social classification
+
+Interest groups that participate in passive surveillance have learned to invite a target of interest into a group chat as a means to verify their social classification.
+
+Once they're invited into a group chat, whisper networks evaluate the target of interest based on the following:
+
+Green bubble
+interpreted as Android/SMS in some contexts interpreted by an observer as lower technological prestige
+potentially associated with lower purchasing power or different cultural affiliation
+potentially affects how the person is socially categorized.
+And conversely:
+
+Blue bubble
+interpreted as iMessage
+interpreted as iPhone ownership
+potentially interpreted as technological/consumer status
+potentially converted into an assumption about socioeconomic capital.
+
+
 Chapter Six: Applying Labeling Theory & Social Proof of Symbolic Digital Media Codes
 
         - Social Proof in Digital Media Spaces
         - Establishing Social Authority With User Engagement Metrics
         - The Technological Appropriation of Legacy UI Features on Social Media Platforms
         - The New Digital Authority Legend (As A Result of Long-Term Appropriation of Legacy UI Features)
+        - Consumer Technology as social proof signaling
 
 Likes - most recent affiliations identifier
 Comments - subjective opinions and objective logistics index
