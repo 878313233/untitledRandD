@@ -1,0 +1,37 @@
+
+
+Stanford University - TMS-EEG Experiment Data
+
+https://redcap.stanford.edu/surveys/?s=EF9N8NW7FKT7YNPY&study=1
+
+Provides functional neural data for organoid intelligence and wetware reconstruction.
+
+Dr. Corey Keller, MD, PhD.
+401 Quarry Rd, Stanford, CA 94305.
+
+Request personal data from the “Investigation of Functional Networks in the Human Brain Using Brain Imaging and Neuromodulation" research study
+
+
+Meta - Codec Avatar Training Data
+
+https://crowdgen.com/avatara-registration-form/
+
+Provides a high resolution digital avatar.
+
+To: datafoundations@fb.com
+Cc: hsrteam@meta.com
+
+Request personal data from research study PIVH-2019N
+
+
+FinalSpark - Neuroplatform Research Access
+
+https://finalspark.com/neuroplatform/?utm_source=chatgpt.com
+
+Provides remote access to human brain organoids for wetware computing and organoid intelligence research.
+
+FinalSpark
+Rue du Clos 12, 1800 Vevey, Switzerland.
+
+Apply for Neuroplatform research access and submit a research project proposal. FinalSpark currently advertises remote organoid access, real-time neural stimulation and recording, Python API access, data storage, and technical support.
+
