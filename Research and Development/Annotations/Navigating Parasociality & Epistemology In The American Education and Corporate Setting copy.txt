@@ -1,11 +1,27 @@
 Navigating Parasociality & Epistemology In The American Education and Corporate Setting
+One of those books that no one likes but remembers having to write essays about.
+
 By Luis Angel Soberanis-Pacheco
+
+with help from FMA6 & SOC8
 
 
 This book is still a work in progress.
-The following below consists of chapters that are followed by elaboration points that will later be extended into larger paragraphs.
+Nor is it backed by anything that says that I know what I'm talking about.
+Even if this does get published, it might as well be random words with an ISBN.
 
-Written in congruence to applications that are explored in "Proximity-Based Passive Surveillance Platforms & Digital Whisper Networks"
+Anyway.
+
+The following below consists of chapters that are followed by elaboration points that will later be extended into larger paragraphs.
+You can also spam the Explain button on VSCode if you don't feel like waiting. It gets kinda boring ngl.
+
+Oh it helps to read the annotation "Proximity-Based Passive Surveillance Platforms & Digital Whisper Networks" for context.
+Or you can just read this as is. Whatever floats ur boat.
+
+Alright enjoy your boredom.
+
+
+
 
 Prologue: McCarthyism - The American Moral Entrepreneur and the Folk Devil
 Chapter One: Blind Propelling Axioms With Social and Cultural Epistemologies
@@ -109,11 +125,11 @@ Soda vs Water Drinkers
 Food Pantry Cardboard Boxes vs Restaurant Takeout Boxes
 
         In some parts of California, takeout trays, boxes, and even grocery bags, if interpreted through the lens of semiotics, can indicate whether
-        a meal or produce was purchased at a restaurant, grocery store, or a public food pantry.
+        a meal or produce was purchased at a restaurant, grocery store, or a public food pantry; which can indicate the economic status of an individual
         
 
 
-The Epistemology of Hygiene and Mental Health
+The Epistemology of Bodies, Hygiene and Mental Health
 
         The Vicinity and Radius of Perceived Mental Health
                 - the idea that your pedagogy and dogma most likely aligns with those you surround yourself with, therefore, making certain spaces an indicator of a lack of mental health or social skills vs an abundance of healthy attributes.
@@ -123,12 +139,12 @@ The Epistemology of Hygiene and Mental Health
                wanted to mention that there's also a splinter in the United States between Protestant, Catholic, Evangelical, and Restorationist churches, which all have their own perceptions of mental health.
 
         The Size of Perceived Athleticism and Illness as seen from Deviant Bodies
-                - the idea that Athleticism is an attribute that is perceived by an indicator of heigh and size and not by recorded metrics 
+                - the idea that Athleticism is an attribute that is perceived by an indicator of height and size and not by recorded metrics 
                 - the idea that slender qualities in some cultures are attributed to genetics while being slender in other cultures is an attribute of addiction or illness
                 - "polarized napping", experiment
 
                 If found napping on a desk in a college setting, a passerby may experience empathy if the individual depicts or is known to hold healthy attributes (wearing a blazer, student body rep, accredited person, etc) as the nap is postulated to be as a result of productive activities
-                However, if an individual is found napping on a desk with attributes that point towards a lack of hygiene or mental health (dirty laundry, dark clothing, messy hair, ), a passerby may feel danger or a sense of surveillance and enforcement as a passerby may assert the nap being a result of a drug induced state.
+                However, if an individual is found napping on a desk with attributes that point towards a lack of hygiene or mental health (dirty laundry, dark clothing, messy hair, ), a passerby may feel danger or a sense of surveillance and enforcement as a passerby may assert the nap being a result of a drug induced state, especially in poor and low income communities
 
                 This same phenomena can be seen when individuals are seen laying on the floor in a suit in tie, vs in normal clothes in an experiment called "The Bystander Effect"
 
