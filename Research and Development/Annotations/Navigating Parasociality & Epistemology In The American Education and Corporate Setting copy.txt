@@ -1,5 +1,4 @@
 Navigating Parasociality & Epistemology In The American Education and Corporate Setting
-One of those books that no one likes but remembers having to write essays about.
 
 By Luis Angel Soberanis-Pacheco
 
@@ -101,15 +100,19 @@ Chapter Six: Applying Labeling Theory & Social Proof of Symbolic Digital Media C
         - The New Digital Authority Legend (As A Result of Long-Term Appropriation of Legacy UI Features)
         - Consumer Technology as social proof signaling
 
-Likes - most recent affiliations identifier
-Comments - subjective opinions and objective logistics index
-Tagged - Location and affiliation chart
-Followers - affiliated dogmas and pedagogy evaluator 
+
+Legend of appropriated user interface features over a span of time:
+Likes - now used by some subcultures as a 'most recent affiliations identifier'
+Comments - reviewed by other subcultures as subjective opinions and objective logistics
+Tagged - This indicates to social media viewers of a location and affiliation to said location
+Followers - Followers are now commonly reviewed by digitally affluent social groups as they indicate an individuals affiliated dogmas and pedagogy based on the people that follow them 
 Following - pursed interests, personal projections, and behavioral output interpreter
 
-
-
-
+        - religious groups that in the United States splinter (Restorationists, Evangelicals, Protestants, Catholic) 
+        are now slowly beginning to adopt a form of digital after language and loaded language that interprets the word "follower" as religious action rather than a user interface feature.
+        In other words, having "followers" can imply blasphemy or can create a power imbalance or discomfort in some religious social circles if a specific individual verbally says that they "follow" someone else on a social media platform.
+        This leaves some religious circles with only being comfortable with certain individuals following them on social media, while feeling uncomfortable when saying that they follow that individual, despite giving them permission to follow their accounts.
+        This creates accounts where individuals are given permission to follow a religious person's account, while the religious person doesn't follow them back.
         
 The Epistemology of Diet and Athleticism.
 
@@ -149,13 +152,23 @@ The Epistemology of Bodies, Hygiene and Mental Health
                 This same phenomena can be seen when individuals are seen laying on the floor in a suit in tie, vs in normal clothes in an experiment called "The Bystander Effect"
 
 
+
+The Epistemology of Perceived Education
+
+
         McGraw Hill, Cengage, Canvas, and other Education Platforms as a milestone
         Credentials In The United States for Foreigners vs US Citizens
+                - depending on the demographic, some cultures, especially those with high social and cultural capital, 
+                may perceive different minorities through lenses that indicate to them that a student or classmate based on race or class alone can exhibit behaviors of prioritizing long-term education and career plans vs short-term institutional resource exploitation 
+                (only in college for credits to transfer vs only in college for access to libraries or free food) 
+                (attending college due to a career failure vs a career transition)
+                (attending college without a specific career goal vs detailed steps on career path)
+
         Independent IRS.GOV & BizFile.com Access vs Accredited Institution-to-Corporate Employment Pipeline
         The late stage effects of appropriating accredited institutions and credentials into indicators of social and cultural capital
         Late stage effects of F-1 & H1-B Visa interpretations of DEI initiatives as an application vs an opportunity (self cooptation and instrumentalization) in a college infrastructure and employment availability. 
         The Appropriation of Social and Cultural Capital as Social Credit in the United States
-        
+
 
 
 
