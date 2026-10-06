@@ -17,7 +17,8 @@ You can also spam the Explain button on VSCode if you don't feel like waiting. I
 Oh it helps to read the annotation "Proximity-Based Passive Surveillance Platforms & Digital Whisper Networks" for context.
 Or you can just read this as is. Whatever floats ur boat.
 
-Alright enjoy your boredom.
+
+Alright, enjoy your boredom.
 
 
 
@@ -161,12 +162,16 @@ The Epistemology of Bodies, Hygiene and Mental Health
         The Size of Perceived Athleticism and Illness as seen from Deviant Bodies
                 - the idea that Athleticism is an attribute that is perceived by an indicator of height and size and not by recorded metrics 
                 - the idea that slender qualities in some cultures are attributed to genetics while being slender in other cultures is an attribute of addiction or illness
+              
+
                 - "polarized napping", experiment
 
                 If found napping on a desk in a college setting, a passerby may experience empathy if the individual depicts or is known to hold healthy attributes (wearing a blazer, student body rep, accredited person, etc) as the nap is postulated to be as a result of productive activities
                 However, if an individual is found napping on a desk with attributes that point towards a lack of hygiene or mental health (dirty laundry, dark clothing, messy hair, ), a passerby may feel danger or a sense of surveillance and enforcement as a passerby may assert the nap being a result of a drug induced state, especially in poor and low income communities
 
                 This same phenomena can be seen when individuals are seen laying on the floor in a suit in tie, vs in normal clothes in an experiment called "The Bystander Effect"
+
+
 
                 - "smell is audible" experiment
 
@@ -197,8 +202,30 @@ The Epistemology of Perceived Education
 
 
 
+The "Education Suspicion" Effect
+
+If you're observed with a background that holds really low social and cultural capital and your career path and/or education exceeds the expectations of what can be achieved in
+
+        Tech
+        Finance
+        Medicine
+        Politics
+
+by those with your background, two things happen: 
+
+If someone with background with high social and cultural capital observes this,
+You're assumed to have cheated your way through it, as it's assumed to not be common for those with low social and cultural capital to be affluent in those fields of education without some form of criminal or infrastructural intervention.
+
+However, if someone from a background with low social and cultural capital observes this,
+You're assumed to be a police officer, an informant, or an intelligence asset, especially if you enunciate your words in a deep voice around those who are not familiar your career or education path.
+
+In other words, if you're proven as smart or successful around those with low or high social or cultural capital. Their conclusions will immediately jump to crime or a police investigation.
+If assertions come from a figure or authority or immediate responsibility, they hold an opportunity to implement methods that are used in Munchausen by Proxy Syndrome cases, except not from a caregiver for dependent gain; which can develop and be used by labeling a person with various mental illnesses as attributors to certain behaviors or infrastructural opportunities. 
 
 
+In other words, if you can successfully get a population to assert that a subject is either a criminal or police officer, you can use the same assertion methods to convince a population that they hold a mental health issue or any label.
+
+The assertion methods work the same in both cases, and can be easily reinforced when a subject denies those assertions.
 
 
 
@@ -253,4 +280,4 @@ Theory Four
 "If a foreign country aims to capitalize on their strategic essentialism in another so it furthers regulatory capture on behalf of their race, interest convergences install bureaucrats as a means to create laws that have never been made in those countries before." 
 
 Theory Five
-"If you exceed the infrastructural expectations of those with higher social and cultural capital, you're more likely to be accused of being an intelligence agent, informant, or undercover police officer, especially by immigrants and US citizens from poor and low income backgrounds.
+"If you exceed the infrastructural expectations of those with higher social and cultural capital, you're more likely to be accused of being an asset to organized crime, an intelligence agent, an informant, or an undercover police officer, especially by immigrants and US citizens from poor and low income backgrounds. Rare successes may also attributed to government, municipal, or criminal intervention."
