@@ -151,6 +151,15 @@ The Epistemology of Bodies, Hygiene and Mental Health
 
                 This same phenomena can be seen when individuals are seen laying on the floor in a suit in tie, vs in normal clothes in an experiment called "The Bystander Effect"
 
+                - "smell is audible" experiment
+
+                This experiment demonstrates a phenomena that can make any item, person, or place have an anticipated smell, without having those smells at all.
+                The experiment is set up by having a subject or multiple subjects in a real setting observe a group of confederates and their reactions to an item, a person, or a location.
+                If the confederates express a positive reaction after pretending to smell an item, person, or location, the subject or group of subjects are found to either pursue or even completely ignore the item, person, or place after being exposed to it a second time.
+                If the confederates express a negative reaction after pretending to smell an item, person, or location, the subject or group of subjects are found to either react the same way (despite the placebo), avoiding the area and alerting networks, or making attempts to discard the item, person, or place via proxy. 
+
+                - Digital Passive Surveillance tool applications in this settings
+
 
 
 The Epistemology of Perceived Education
@@ -168,6 +177,7 @@ The Epistemology of Perceived Education
         The late stage effects of appropriating accredited institutions and credentials into indicators of social and cultural capital
         Late stage effects of F-1 & H1-B Visa interpretations of DEI initiatives as an application vs an opportunity (self cooptation and instrumentalization) in a college infrastructure and employment availability. 
         The Appropriation of Social and Cultural Capital as Social Credit in the United States
+
 
 
 
@@ -224,3 +234,6 @@ Theory Three
 
 Theory Four
 "If a foreign country aims to capitalize on their strategic essentialism in another so it furthers regulatory capture on behalf of their race, interest convergences install bureaucrats as a means to create laws that have never been made in those countries before." 
+
+Theory Five
+"
