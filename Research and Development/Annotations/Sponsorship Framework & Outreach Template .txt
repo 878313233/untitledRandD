@@ -2,7 +2,7 @@
 
 Sponsorship Framework & Sponsor Outreach Template
 
-	Industry Terms
+	Definitions
 
 Property:
 The organization, event, team, venue, or cause offering the sponsorship opportunity.

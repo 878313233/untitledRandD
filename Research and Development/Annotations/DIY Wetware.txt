@@ -1,6 +1,6 @@
 
-DIY Wetware
-By Luis Angel Soberanis-Pacheco
+"DIY Wetware"
+Luis Angel Soberanis-Pacheco
 
 The following are places that collect your human data so you can use it online for neural modeling and OI experiments.
 
