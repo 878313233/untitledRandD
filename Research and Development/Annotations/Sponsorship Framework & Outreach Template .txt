@@ -1,19 +1,19 @@
 
 
-Sponsorship Framework & Outreach Template
+Sponsorship Framework & Sponsor Outreach Template
 
-	Framework
+	Industry Terms
 
-Property
+Property:
 The organization, event, team, venue, or cause offering the sponsorship opportunity.
 Examples: Nonprofit organization, sports team, festival, venue, conference.
 Include the location or market when relevant.
 
-Audience
+Audience:
 The target demographic the sponsor wants to reach through the property.
 Examples: Age, gender, income, interests, profession, geographic market, lifestyle.
 
-Activation
+Activation:
 The experiences or marketing activities that engage the audience beyond logo placement.
 Examples:
 - Product sampling
@@ -23,7 +23,8 @@ Examples:
 - Social media campaigns
 - Live demonstrations
 - VIP experiences
-Assets
+
+Assets:
 The specific sponsorship benefits or rights provided to the sponsor.
 Examples:
 - Logo placement
@@ -40,7 +41,7 @@ Examples:
 
 ________________________________________________________________________________________
 
-	Template
+	Sponsor Outreach Template
 
 Sponsor Company:
 Brand:
@@ -111,7 +112,7 @@ List the Sponsorship Assets:
 • Speaking opportunity
 • Email newsletter inclusion
 
-Ask for meeting: 
+Ask for a meeting: 
 Would you be available for a brief meeting to discuss how we can build a partnership that aligns with your marketing and community goals?
 
 Thank you for your time and consideration. I look forward to hearing from you.
