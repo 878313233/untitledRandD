@@ -1,0 +1,15 @@
+name: Update Repo About Section
+on: [push]
+
+jobs:
+  update-metadata:
+    runs-on: ubuntu-latest
+    permissions:
+      repository-projects: write
+      contents: write
+    steps:
+      - name: Update Description and Topics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh repo edit ${{ github.repository }} --description "An all in one AI R&-to-CDMO/CRO SDL framework. Created by Luis Angel Soberanis Pacheco" --add-topic "topic1,topic2"
