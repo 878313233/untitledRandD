@@ -1,0 +1,144 @@
+import json
+import os
+import random
+import sys
+
+def get_ceo_avatar(node):
+    if not node:
+        return ["     [ NO ENTITY ACTIVE ]     ", "           ( - . - )            "]
+    name = node.get("name", "")
+    tax = node.get("tax_status", "")
+    if "Trigger" in name or "Violation" in tax or "Isolated" in tax:
+        return ["     [ CEO: COMPROMISED ]     ", "           ( × ﹏ × )            "]
+    elif "Counter" in name or "Lien" in tax or "Bypass" in tax:
+        return ["     [ CEO: ADVERSARIAL ]     ", "           ( •̀ ‸ •́ )            "]
+    elif "Joint-Venture" in name or "Trust" in tax or "Bridge" in tax:
+        return ["     [ CEO: SYNERGISTIC ]     ", "           (    ^ ◡ ^   )            "]
+    else:
+        return ["     [ CEO: CALCULATING ]     ", "           (    .    .  ) - 📉  "]
+
+def render_ascii_tree(node, prefix="", is_last=True):
+    lines = []
+    connector = "└── " if is_last else "├── "
+    name = node.get("name", "Entity Node")
+    meta = f" [{node['tax_status']}]" if "tax_status" in node else ""
+    lines.append(f"{prefix}{connector}{name}{meta}")
+    children = node.get("children", [])
+    child_prefix = prefix + ("    " if is_last else "│   ")
+    for i, child in enumerate(children):
+        last_child = i == (len(children) - 1)
+        lines.extend(render_ascii_tree(child, child_prefix, last_child))
+    return lines
+
+class EntityEngine:
+    @staticmethod
+    def generate_base_structure():
+        h_count = random.randint(2, 4)
+        holdings = []
+        for i in range(1, h_count + 1):
+            llc_count = random.randint(1, 3)
+            llcs = [{"name": f"Partnership Taxed LLC {chr(64 + i)}{j}", "tax_status": "Pass-Through (Subchapter K)"} for j in range(1, llc_count + 1)]
+            holdings.append({"name": f"Holding Company {chr(64 + i)} (Parent Node {i})", "tax_status": "Check-the-Box Corporate", "children": llcs})
+        return {"name": f"Enterprise Root #{random.randint(100, 999)}", "tax_status": "Form 1120 Holding Entity", "children": holdings}
+
+    @staticmethod
+    def generate_poison_pill_structure():
+        sub_count = random.randint(2, 4)
+        subs = []
+        for i in range(1, sub_count + 1):
+            subs.append({"name": f"Subsidiary {chr(64 + i)} Corp (QSub Node)", "tax_status": "Form 8869 Pass-Through", "children": [{"name": f"Operating SMLLC Node {i}", "tax_status": "Disregarded Entity"}]})
+        subs.append({"name": "[TRIGGER DEPLOYED]: Stock Transferred to Ineligible Entity", "tax_status": "IRC § 1361 Violation", "children": [{"name": "Conversion Event: Form 1120 Shell (Isolated Assets)", "tax_status": "Unlicensed / Severed Control"}]})
+        return {"name": f"Master IP Purpose Trust #{random.randint(10, 99)} (Non-Stock Overwatch)", "tax_status": "Ownerless Overwatch Vehicle", "children": [{"name": "Holds 100% Core IP, Asset Titles & Master Operating License", "tax_status": "Asset Isolation Tier"}, {"name": "S Corporation Parent Entity", "tax_status": "Form 1120-S Pass-Through Parent", "children": subs}]}
+
+    @staticmethod
+    def invent_counter_structure(source_tree):
+        source_name = source_tree.get("name", "Target")
+        counter_types = [
+            ("Senior Lien Secured Enclave", "Blocks Downstream Holding Recovery", "Senior Lien Trust"),
+            ("Adversarial IP Bypass Vault", "Bypasses Master License Titling", "Independent Patent Holding"),
+            ("Direct Market Proxy Grid", "Neutralizes Pass-Through Tax Flows", "Out-of-State Delaware LLC")
+        ]
+        chosen_type = random.choice(counter_types)
+        return {"name": f"Counter-Architecture to [{source_name[:12]}...] ({chosen_type[0]})", "tax_status": "Adversarial Isolation Vehicle", "children": [{"name": f"Sub-Node: {chosen_type[1]}", "tax_status": chosen_type[2]}, {"name": "Autonomous Proxy Execution Node", "tax_status": "Direct Direct-to-Market SMLLC"}]}
+
+    @staticmethod
+    def invent_supplemental_structure(source_tree):
+        source_name = source_tree.get("name", "Partner")
+        return {"name": f"Synthesized Joint-Venture Bridge for [{source_name[:10]}...]", "tax_status": "Bilateral Interlocking Trust", "children": [{"name": "Shared Resource Pool (Subchapter K Integration)", "tax_status": "Mutual Pass-Through Grid"}, {"name": "Cross-Licensed Bridge Entity", "tax_status": "Collaborative Operating Node"}]}
+
+    @staticmethod
+    def evolve_hybrid_structure(tree_a, tree_b):
+        return {"name": f"Evolved Hybrid Synthesis #{random.randint(1000, 9999)}", "tax_status": "Multi-Parent Holding / Trust Hybrid", "children": [{"name": "Fused Asset Tier (Derived from A)", "tax_status": tree_a.get("tax_status", "Corporate Node")}, {"name": "Fused Operational Tier (Derived from B)", "tax_status": tree_b.get("tax_status", "Pass-Through Node")}, {"name": "Recursive Self-Executing Poison Pill Matrix", "tax_status": "Autonomous Fallback Shell"}]}
+
+class CLIDashboard:
+    def __init__(self):
+        self.structure_a = EntityEngine.generate_base_structure()
+        self.structure_b = EntityEngine.generate_poison_pill_structure()
+
+    def clear(self):
+        os.system("cls" if os.name == "nt" else "clear")
+
+    def draw(self):
+        self.clear()
+        dash_width = 136
+        col_width = 65
+        print("=" * dash_width)
+        print(" " * 28 + "ENTERPRISE CEO REACTION & STRUCTURE EVOLUTION DASHBOARD")
+        print("=" * dash_width)
+        ceo_a = get_ceo_avatar(self.structure_a)
+        ceo_b = get_ceo_avatar(self.structure_b)
+        for line_a, line_b in zip(ceo_a, ceo_b):
+            print(f"{line_a:<{col_width}} | {line_b}")
+        print("-" * dash_width)
+        print(f"{'STRUCTURE A (Entity Grid)':<{col_width}} | STRUCTURE B")
+        print("-" * dash_width)
+        lines_a = render_ascii_tree(self.structure_a)
+        lines_b = render_ascii_tree(self.structure_b) if self.structure_b else ["[ Empty ]"]
+        max_lines = max(len(lines_a), len(lines_b), 14)
+        for i in range(max_lines):
+            l_str = lines_a[i] if i < len(lines_a) else ""
+            r_str = lines_b[i] if i < len(lines_b) else ""
+            print(f"{l_str[:col_width]:<{col_width}} | {r_str}")
+        print("=" * dash_width)
+        sys.stdout.flush()
+
+    def run(self):
+        while True:
+            try:
+                self.draw()
+                print("\nCOMMAND PROMPT:")
+                print("  [1] Randomize Structure A")
+                print("  [2] Randomize Structure B")
+                print("  [3] Invent Counter Structure for B (derived from A)")
+                print("  [4] Invent Counter Structure for A (derived from B)")
+                print("  [5] Invent Supplemental Joint-Venture (A + B)")
+                print("  [6] Evolve Autonomous Hybrid Structure (Fuses A and B)")
+                print("  [q] Quit")
+                sys.stdout.flush()
+                cmd = input("\nEnter command [1-6, q]: ").strip().lower()
+                if cmd == "q":
+                    print("Exiting dashboard.")
+                    sys.exit(0)
+                elif cmd == "1":
+                    self.structure_a = random.choice([EntityEngine.generate_base_structure(), EntityEngine.generate_poison_pill_structure()])
+                elif cmd == "2":
+                    self.structure_b = random.choice([EntityEngine.generate_base_structure(), EntityEngine.generate_poison_pill_structure()])
+                elif cmd == "3":
+                    self.structure_b = EntityEngine.invent_counter_structure(self.structure_a)
+                elif cmd == "4":
+                    self.structure_a = EntityEngine.invent_counter_structure(self.structure_b)
+                elif cmd == "5":
+                    self.structure_b = EntityEngine.invent_supplemental_structure(self.structure_a)
+                elif cmd == "6":
+                    hybrid = EntityEngine.evolve_hybrid_structure(self.structure_a, self.structure_b)
+                    self.structure_a = self.structure_b
+                    self.structure_b = hybrid
+            except (KeyboardInterrupt, EOFError):
+                print("\nExiting dashboard.")
+                break
+            except Exception as e:
+                print(f"\n[Error Encountered]: {e}")
+                input("Press Enter to continue...")
+
+if __name__ == "__main__":
+    CLIDashboard().run()
