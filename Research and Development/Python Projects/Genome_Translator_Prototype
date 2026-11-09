@@ -1,0 +1,87 @@
+import random
+import os
+import sys
+
+BASES = ["A", "T", "C", "G"]
+CODON_TABLE = {
+    "UUU": "Phe", "UUC": "Phe", "UUA": "Leu", "UUG": "Leu",
+    "UCU": "Ser", "UCC": "Ser", "UCA": "Ser", "UCG": "Ser",
+    "UAU": "Tyr", "UAC": "Tyr", "UGU": "Cys", "UGC": "Cys", "UGG": "Trp",
+    "CCU": "Pro", "CCC": "Pro", "CCA": "Pro", "CCG": "Pro",
+    "CAU": "His", "CAC": "His", "CAA": "Gln", "CAG": "Gln",
+    "CGU": "Arg", "CGC": "Arg", "CGA": "Arg", "CGG": "Arg",
+    "AUU": "Ile", "AUC": "Ile", "AUA": "Ile", "AUG": "Met(Start)",
+    "ACU": "Thr", "ACC": "Thr", "ACA": "Thr", "ACG": "Thr",
+    "AAU": "Asn", "AAC": "Asn", "AAA": "Lys", "AAG": "Lys",
+    "AGU": "Ser", "AGC": "Ser", "AGA": "Arg", "AGG": "Arg",
+    "GUU": "Val", "GUC": "Val", "GUA": "Val", "GUG": "Val",
+    "GCU": "Ala", "GCC": "Ala", "GCA": "Ala", "GCG": "Ala",
+    "GAU": "Asp", "GAC": "Asp", "GAA": "Glu", "GAG": "Glu",
+    "GGU": "Gly", "GGC": "Gly", "GGA": "Gly", "GGG": "Gly"
+}
+
+def generate_dna_strand(length=48):
+    return "".join(random.choice(BASES) for _ in range(length))
+
+def transcribe_to_mrna(dna):
+    return dna.replace("T", "U")
+
+def translate_mrna(mrna):
+    return [CODON_TABLE.get(mrna[i:i+3], "---") for i in range(0, len(mrna)-2, 3)]
+
+def render_double_helix_frame():
+    return [
+        "  5' ... [ A = = T ] --- [ G ≡ C ] --- [ T = = A ] --- [ C ≡ G ] ... 3'",
+        "          \\     /         \\     /         \\     /         \\     /",
+        "           X             X             X             X         ",
+        "          / \\           / \\           / \\           / \\        ",
+        "  3' ... [ T = = A ] --- [ C ≡ G ] --- [ A = = T ] --- [ G ≡ C ] ... 5'"
+    ]
+
+def render_chromatin_state(level):
+    states = [
+        "Euchromatin (Open/Active):   ~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~",
+        "10nm Fiber (Beads on a String): o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o",
+        "30nm Solenoid Fiber:         [==============] [==============]",
+        "Heterochromatin (Condensed): ###################################"
+    ]
+    return states[level % len(states)]
+
+class GenomeSimulatorCLI:
+    def __init__(self):
+        self.dna = generate_dna_strand(48)
+        self.mrna = transcribe_to_mrna(self.dna)
+        self.proteins = translate_mrna(self.mrna)
+        self.compaction = 0
+
+    def run(self):
+        while True:
+            os.system("cls" if os.name == "nt" else "clear")
+            print("=" * 76)
+            print(" " * 20 + "GENOMIC SEQUENCE & CHROMATIN ARCHITECTURE SIMULATOR")
+            print("=" * 76)
+            print("\n[1] DNA Double Helix Structure:")
+            for line in render_double_helix_frame():
+                print(line)
+            print(f"\n[2] Active DNA Strand (5' -> 3'):\n    {self.dna}")
+            print(f"    mRNA Transcript (5' -> 3'):\n    {self.mrna}")
+            print(f"\n[3] Translated Polypeptide Chain (Amino Acids):\n    {' - '.join(self.proteins[:12])} ...")
+            print(f"\n[4] Chromatin State & Epigenetic Compaction:\n    {render_chromatin_state(self.compaction)}")
+            print("-" * 76)
+            print("COMMANDS: [r] Regenerate DNA | [c] Cycle Chromatin State | [q] Quit")
+            print("=" * 76)
+            try:
+                cmd = input("\nEnter command [r, c, q]: ").strip().lower()
+                if cmd == "q": 
+                    sys.exit(0)
+                elif cmd == "r":
+                    self.dna = generate_dna_strand(48)
+                    self.mrna = transcribe_to_mrna(self.dna)
+                    self.proteins = translate_mrna(self.mrna)
+                elif cmd == "c": 
+                    self.compaction += 1
+            except (KeyboardInterrupt, EOFError):
+                sys.exit(0)
+
+if __name__ == "__main__":
+    GenomeSimulatorCLI().run()
