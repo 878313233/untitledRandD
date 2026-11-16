@@ -9,7 +9,16 @@ This book is still a work in progress.
 Nor is it backed by anything that says that I know what I'm talking about.
 Even if this does get published, it might as well be random words with an ISBN.
 
-Anyway.
+None of the following is supposed to be taken as objective truth or fact as many variables within certain conditions may or may not effect
+results that are expected within a specific environment that this is looking to be noticed or applied in.
+
+Worse case scenario, all of the following is applied onto the writer of this and not the readers.
+
+Which, hasn't happened... right?
+
+
+
+.
 
 The following below consists of chapters that are followed by elaboration points that will later be extended into larger paragraphs.
 You can also spam the Explain button on VSCode if you don't feel like waiting. It gets kinda boring ngl.
