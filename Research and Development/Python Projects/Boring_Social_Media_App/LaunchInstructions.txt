@@ -21,3 +21,6 @@ How to Relaunch (Returning Users):
    1. cd "Research and Development/Python Projects/Boring_Social_Media_App"
    2. source venv/bin/activate
    3. uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+
+Direct URL Link (After Port Forwarding):  https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9-8000.app.github.dev/
