@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Boring Social Media App - Broadcasted Boring Posts. Nothing else really.</title>
+    <link rel="stylesheet" href="/static/style.css?v=2">
+</head>
+<body>
+    <div id="app-container">
+        <!-- SIGN-UP / ONBOARDING MODALS -->
+        <div id="signup-screen" class="screen active">
+            <div class="auth-card">
+                <h2>A Really Shady Company presents</h2>
+                <h1>A Boring Social Media App</h1>
+                <p class="subtitle">Broadcasted Boring Posts. Nothing else really.</p>
+                <p id="site-user-count-signup" class="muted" style="margin-bottom: 15px; font-weight: 600; font-size: 13px; color: #0066cc;">Loading user count...</p>
+                
+                <form id="signup-form" onsubmit="handleSignup(event)">
+                    <div class="form-row">
+                        <label>First Name:</label>
+                        <input type="text" id="signup-firstname" required placeholder="John">
+                    </div>
+                    <div class="form-row">
+                        <label>Last Name:</label>
+                        <input type="text" id="signup-lastname" required placeholder="Doe">
+                    </div>
+                    <div class="form-row">
+                        <label>Birthday (MM/DD/YYYY):</label>
+                        <input type="text" id="signup-birthday" required placeholder="01/01/1990">
+                    </div>
+                    <div class="form-row">
+                        <label>Email:</label>
+                        <input type="email" id="signup-email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-row">
+                        <label>Password:</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Connect Payroll Aggregator API:</label>
+                        <select id="signup-payroll">
+                            <option value="">Select Provider (Coming Soon)</option>
+                            <option value="Rippling">Rippling</option>
+                            <option value="Workday">Workday</option>
+                            <option value="Legion">Legion</option>
+                            <option value="ADP">ADP</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+                <p style="text-align:center; margin-top:15px; font-size:13px;">
+                    Already have an account? <a href="#" onclick="showLoginScreen(event)">Log in</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- TERMS & CONDITIONS MODAL -->
+        <div id="terms-modal" class="settings-modal" style="display:none;">
+            <div class="settings-content" style="max-width: 320px; font-family: monospace; font-size: 11px; color: #111; line-height: 1.3; text-align: left; padding: 20px;">
+                <h3 style="font-size: 12px; font-family: monospace; margin-top: 0; margin-bottom: 8px; text-transform: uppercase;">Terms and Conditions</h3>
+                <p style="margin-bottom: 12px; font-family: monospace;">
+                    There are no rules.<br>
+                    This is the wild west.
+                </p>
+                <div style="margin: 15px 0;">
+                    <label style="cursor: pointer; display: flex; align-items: center; gap: 6px; font-family: monospace; font-size: 11px;">
+                        <input type="checkbox" id="tc-checkbox" onchange="toggleTermsButton()" style="width: auto;"> Click here to agree.
+                    </label>
+                </div>
+                <button id="tc-agree-btn" onclick="submitSignupAfterTerms()" class="btn-primary" disabled style="opacity: 0.5; cursor: not-allowed; margin-top: 10px; font-family: monospace; font-size: 12px;">Create Account</button>
+                <button onclick="closeTermsModal()" class="btn-secondary" style="margin-top: 5px; font-size: 11px; padding: 6px; font-family: monospace;">Cancel</button>
+            </div>
+        </div>
+
+        <!-- LOGIN SCREEN -->
+        <div id="login-screen" class="screen">
+            <div class="auth-card">
+                <h2>A Really Shady Company presents</h2>
+                <h1>A Boring Social Media App</h1>
+                <p class="subtitle">Log back in to your broadcasted feed</p>
+                <p id="site-user-count-login" class="muted" style="margin-bottom: 15px; font-weight: 600; font-size: 13px; color: #0066cc;">Loading user count...</p>
+                
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-row">
+                        <label>Email:</label>
+                        <input type="email" id="login-email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-row">
+                        <label>Password:</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Log In</button>
+                </form>
+                <p style="text-align:center; margin-top:15px; font-size:13px;">
+                    Don't have an account? <a href="#" onclick="showSignupScreen(event)">Create Account</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- ONBOARDING SCREEN -->
+        <div id="onboarding-screen" class="screen">
+            <div class="auth-card">
+                <div id="onboard-step-1">
+                    <h2>Welcome <span id="ob-name"></span>!</h2>
+                    <div class="role-badge">
+                        We found your role at this company!<br>
+                        <strong>Associate Chair Lifter at Waffle House!</strong>
+                    </div>
+                    <p>Would you like to import your historical compensation data?</p>
+                    <div class="btn-group">
+                        <button onclick="selectHistory(true)" class="btn-primary">Yes</button>
+                        <button onclick="selectHistory(false)" class="btn-secondary">No</button>
+                    </div>
+                </div>
+
+                <div id="onboard-step-2" style="display:none;">
+                    <h3 id="ob-choice-msg"></h3>
+                    <form id="onboard-form" onsubmit="handleOnboarding(event)">
+                        <div class="form-row">
+                            <label>Username:</label>
+                            <input type="text" id="ob-username" required placeholder="originalusername">
+                        </div>
+                        <div class="form-row">
+                            <label>Display Name:</label>
+                            <input type="text" id="ob-displayname" required placeholder="CustomUserName">
+                        </div>
+                        <button type="submit" class="btn-primary">Enter A Boring Social Media App</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN HOMEPAGE SCREEN -->
+        <div id="homepage-screen" class="screen">
+            <header>
+                <div class="header-inner">
+                    <h1>A Boring Social Media App</h1>
+                    <div class="user-pill">
+                        <span id="nav-display-name">CustomUserName</span> (@<span id="nav-username">originalusername</span>)
+                        <button onclick="toggleSettings()" class="btn-small">Settings</button>
+                        <button onclick="handleLogout()" class="btn-small">Logout</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-layout">
+                <!-- LEFT / MAIN FEED -->
+                <div class="feed-column">
+                    <!-- COLLAPSIBLE SECTIONS -->
+                    <div class="collapsible-box">
+                        <div class="box-header" onclick="toggleSection('trending-content')">Trending Boring Posts <span>▼</span></div>
+                        <div id="trending-content" class="box-body">
+                            <p class="muted">#BlackRockPayouts • #WalmartPromotion • #TargetFired • #CheetosCostco</p>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-box">
+                        <div class="box-header" onclick="toggleSection('following-content')">Boring Posts You Follow <span>▼</span></div>
+                        <div id="following-content" class="box-body">
+                            <p class="muted">Following @congressman420, @thatoneinfluencer, @friendsgoldfish</p>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-box">
+                        <div class="box-header" onclick="toggleSection('my-boring-content')">My Boring Posts <span onclick="event.stopPropagation(); toggleSection('my-boring-content')">▲</span></div>
+                        <div id="my-boring-content" class="box-body">
+                            <!-- Post Creator -->
+                            <div class="post-creator">
+                                <select id="new-post-type">
+                                    <option value="boring">Boring Post</option>
+                                    <option value="timecard">Timecard</option>
+                                    <option value="purchase">Purchase</option>
+                                    <option value="promotion">Promotion</option>
+                                </select>
+                                <input type="text" id="new-post-title" placeholder="Title (e.g. Boring from Walmart)">
+                                <textarea id="new-post-content" placeholder="Broadcast your financial or work event..."></textarea>
+                                <select id="new-post-timecat">
+                                    <option value="Today">Today</option>
+                                    <option value="Yesterday">Yesterday</option>
+                                    <option value="Last Week">Last Week</option>
+                                </select>
+                                <button onclick="createPost()" class="btn-primary">Broadcast Boring Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TIMELINE FEED -->
+                    <div id="feed-container">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- SETTINGS PANEL (Hidden by default) -->
+                <div id="settings-panel" class="settings-modal" style="display:none;">
+                    <div class="settings-content">
+                        <h3>Settings</h3>
+                        <div class="setting-group">
+                            <h4>Account</h4>
+                            <p>Username: <strong id="settings-username"></strong></p>
+                            <label><input type="checkbox" id="set-private"> Private Account</label>
+                        </div>
+                        <div class="setting-group">
+                            <h4>Personal Data</h4>
+                            <p>Connected Payroll Aggregator: <strong id="settings-payroll">Rippling, Workday, ADP, etc (Coming Soon)</strong></p>
+                        </div>
+                        <div class="setting-group">
+                            <h4>Privacy</h4>
+                            <label><input type="checkbox" id="set-boring-posts"> Show Boring Posts</label>
+                            <label><input type="checkbox" id="set-timecards"> Show Timecards</label>
+                            <label><input type="checkbox" id="set-payout"> Show Total Payout</label>
+                            <label><input type="checkbox" id="set-hide-hris"> Hide HRIS Connections</label>
+                            <label><input type="checkbox" id="set-asm-alert"> ASM & GM Account Detection Alert</label>
+                        </div>
+                        <div class="setting-group">
+                            <h4>Monetization & Notifications</h4>
+                            <p class="muted">Test account retention active.</p>
+                        </div>
+                        <button onclick="saveSettings()" class="btn-primary">Save Settings</button>
+                        <button onclick="toggleSettings()" class="btn-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js?v=2"></script>
+</body>
+</html>
