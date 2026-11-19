@@ -259,3 +259,8 @@ def update_settings(user_id: int, settings: SettingsUpdate, db: Session = Depend
     user.asm_gm_alert = settings.asm_gm_alert
     db.commit()
     return {"message": "Settings updated successfully"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
