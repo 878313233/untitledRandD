@@ -109,8 +109,7 @@ If the folk devil is on their way to a person they've previously contacted, the 
 If the folk devil is anticipated at a certain hour to meet a person they've previously contacted, the person is told, "Are you free at this hour? It's kinda important."
 If the folk devil is in the vicinity of a person they previously contacted, the person is told, "Hey, they need your help with this. They're in the back." "Oh did you wanna come with me to get something? It's around the corner."
 
-Networks with more people may be a lot more prone to moral panics as there's no way to verify information between each other without risking individual investigation, 
-which is usually deemed dangerous on its own. Those who are by themselves may be less prone to moral panics as they are not surrounded by moral entrepreneurs to induce a panic.
+As an organization gets larger and adopts proprietarily sophisticated protocols to ensure self-preservation, the more prone it is to dismantling and/or continuously modifying its communication systems under a moral panic. If the moral panic is high enough, moral entrepreneurs and speaker-agent relativists would have no way to verify information between each other without confronting or directly asking the folk devil, as its deemed dangerous or useless to do so. Those who are by themselves or have known to navigate American infrastructures with little to no networks may be less prone to moral panics as they are not surrounded by moral entrepreneurs to induce a panic.
 
 
 	- can be useful if corporate entities or military personnel developing disruptive elements for organizations that rely on social interactions to develop as a whole.
