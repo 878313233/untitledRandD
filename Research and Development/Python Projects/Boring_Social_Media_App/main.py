@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
-from fastapi.responses import FileResponse FastAPI, Depends, HTTPException
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
