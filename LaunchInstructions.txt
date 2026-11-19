@@ -1,7 +1,0 @@
-How to Run:
-  In your codespace terminal:
-
-   1 cd "Research and Development/Python Projects/Boring_Social_Media_App"
-   2 source venv/bin/activate
-   3 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-  Opening http://localhost:8000/ will now instantly load your application interface without any errors.
