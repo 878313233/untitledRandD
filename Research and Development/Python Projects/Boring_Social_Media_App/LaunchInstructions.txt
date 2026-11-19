@@ -1,7 +1,8 @@
 
 
 How to Run (First-Time Setup):
-Enter the codespace: https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9.github.dev/
+
+  Enter the codespace: https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9.github.dev/
 
   In the codespace terminal:
 
