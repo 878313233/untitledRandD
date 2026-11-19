@@ -297,7 +297,7 @@ However, if the subject is labeled as stable and organized, other drugs in of th
 "Oh he does crack and weed? That's such a failure. He clearly doesn't have enough money for other drugs. Probably got fired for doing crack!" -implies a lack of or limited income
 
 
-There are also instances where if a person is designated a certain class status (employed vs unemployed), being labeled a user of a specific drug can be debunked or reinforced immediately.
+There are also instances where if a person is designated a certain class status (employed vs unemployed, homeless vs housed, high social and cultural capital race vs low social and cultural capital race), being labeled a user of a specific drug can be debunked or reinforced immediately depending on the social and cultural capital the person holds with their race and background. 
 
 "Sorry I sounded like I was smoking crack there for a second!"
 "Oh don't worry. I know you don't. You? Never. Meanwhile, THAT guy over there actually does crack!"
@@ -307,6 +307,9 @@ There are also instances where if a person is designated a certain class status 
 "Maybe even heroin."
 "You might be right. Too risky to ask him."
 "Why would they admit it?
+
+Because of the implication that the epistemologies will never be admitted, they're further cemented as fact, 
+which can be deployed in urban and non-urban settings without evidence or speaking the language of the region.
 
 
 
