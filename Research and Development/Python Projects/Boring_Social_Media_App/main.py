@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -266,6 +266,7 @@ if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def read_index():
-    return FileResponse("static/index.html")
+    with open("static/index.html", "r", encoding="utf-8") as f:
+        return f.read()

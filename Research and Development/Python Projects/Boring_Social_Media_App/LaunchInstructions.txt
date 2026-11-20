@@ -1,4 +1,5 @@
 Codespace Link: https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9.github.dev/
+Web App URL (Port 8000): https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9-8000.app.github.dev
 
 How to Run (First-Time Setup):
 
@@ -13,7 +14,7 @@ How to Run (First-Time Setup):
    5. pip install -r requirements.txt
    6. uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
-  Open http://localhost:8000/
+  Open Web App: https://animated-space-palm-tree-wrjpj7v7jv4r3g6x9-8000.app.github.dev (Ensure port visibility is set to Public in the Ports tab)
 
 How to Relaunch (Returning Users):
   In your codespace terminal:
