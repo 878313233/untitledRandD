@@ -1,63 +1,32 @@
-from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, Boolean
-from sqlalchemy.orm import relationship
 from datetime import datetime
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean
+from sqlalchemy.orm import relationship
 from database import Base
 
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
-    first_name = Column(String, nullable=False)
-    last_name = Column(String, nullable=False)
-    birthday = Column(String, nullable=False)
-    email = Column(String, unique=True, index=True, nullable=False)
-    hashed_password = Column(String, nullable=False)
-    username = Column(String, unique=True, index=True, nullable=False)
-    display_name = Column(String, nullable=False)
-    company_role = Column(String, nullable=True) # e.g. "Associate Chair Lifter at Waffle House"
-    payroll_connected = Column(Boolean, default=False)
-    payroll_provider = Column(String, nullable=True) # e.g. "Workday", "Rippling"
-    import_history = Column(Boolean, default=False)
-
-    # Privacy Settings
-    show_boring_posts = Column(Boolean, default=True)
-    show_timecards = Column(Boolean, default=True)
-    show_total_payout = Column(Boolean, default=True)
-    hide_hris_connections = Column(Boolean, default=False)
-    asm_gm_alert = Column(Boolean, default=True)
-
-    posts = relationship("Post", back_populates="owner", cascade="all, delete-orphan")
-    comments = relationship("Comment", back_populates="user", cascade="all, delete-orphan")
-    likes = relationship("Like", back_populates="user", cascade="all, delete-orphan")
+    username = Column(String(64), unique=True, index=True, nullable=False)
+    password_hash = Column(String(128), nullable=False)
+    posts = relationship("Post", back_populates="author")
+    messages_sent = relationship("Message", foreign_keys="[Message.sender_id]", back_populates="sender")
+    messages_received = relationship("Message", foreign_keys="[Message.recipient_id]", back_populates="recipient")
 
 class Post(Base):
     __tablename__ = "posts"
     id = Column(Integer, primary_key=True, index=True)
-    post_type = Column(String, nullable=False) # "boring", "timecard", "purchase", "promotion", "fired"
-    title = Column(String, nullable=False) # e.g. "Boring from Walmart", "Purchase from Costco"
-    content = Column(Text, nullable=False)
-    time_category = Column(String, nullable=False, default="Today") # "Today", "Yesterday", "Last Week"
-    user_id = Column(Integer, ForeignKey("users.id"))
-    created_at = Column(DateTime, default=datetime.utcnow)
+    content = Column(String(500), nullable=False)
+    timestamp = Column(DateTime, index=True, default=datetime.utcnow)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    author = relationship("User", back_populates="posts")
 
-    owner = relationship("User", back_populates="posts")
-    comments = relationship("Comment", back_populates="post", cascade="all, delete-orphan")
-    likes = relationship("Like", back_populates="post", cascade="all, delete-orphan")
-
-class Comment(Base):
-    __tablename__ = "comments"
+class Message(Base):
+    __tablename__ = "messages"
     id = Column(Integer, primary_key=True, index=True)
-    content = Column(Text, nullable=False)
-    post_id = Column(Integer, ForeignKey("posts.id"))
-    user_id = Column(Integer, ForeignKey("users.id"))
-
-    post = relationship("Post", back_populates="comments")
-    user = relationship("User", back_populates="comments")
-
-class Like(Base):
-    __tablename__ = "likes"
-    id = Column(Integer, primary_key=True, index=True)
-    post_id = Column(Integer, ForeignKey("posts.id"))
-    user_id = Column(Integer, ForeignKey("users.id"))
-
-    post = relationship("Post", back_populates="likes")
-    user = relationship("User", back_populates="likes")
+    sender_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    recipient_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    body = Column(String(1000), nullable=False)
+    timestamp = Column(DateTime, index=True, default=datetime.utcnow)
+    is_read = Column(Boolean, default=False)
+    sender = relationship("User", foreign_keys=[sender_id], back_populates="messages_sent")
+    recipient = relationship("User", foreign_keys=[recipient_id], back_populates="messages_received")
