@@ -314,8 +314,7 @@ Following - pursed interests, personal projections, and behavioral output interp
 
 Sidewalk Jousting
 
-Sharing the sidewalk in some spaces can indicate to others if a person is able to display dominance or class by having individuals step aside or stay in place when walking towards someone on the sidewalk
-
+Sharing the sidewalk in some spaces can indicate to others if a person is able to display dominance or class by having individuals step aside or stay in place when walking towards someone on the sidewalk.
 
 
 
@@ -325,6 +324,10 @@ The Epistemology of Coding
 "He's not even a real coder! He's using Gemini!"
 vs
 "Woah... what are all terminals??"
+
+"This is clearly a government level hacker trying to scam people or track them down!" (Helps to wear a tinfoil hat when replying, "I believe you")
+vs
+"This might be a computer science student. Not sure."
 
 
 
@@ -400,9 +403,7 @@ The Epistemology of Bodies, Hygiene and Mental Health
                 as an extra note in the (eastern vs western religion) section,
                wanted to mention that there's also a splinter in the United States between Protestant, Catholic, Evangelical, and Restorationist churches, which all have their own perceptions of mental health.
 
-				an extra extra note: Mormons are terrifying to devout Catholics. 
-
-			
+				an extra extra note: Mormons are terrifying to devout Catholics.
 
 				
 
